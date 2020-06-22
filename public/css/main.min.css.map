@@ -1,0 +1,1 @@
+{"version":3,"sources":["main.sass"],"names":[],"mappings":"AAAA;EACE,iCAAiC;EAEjC,eAAe;EADf,gBAAgB,EACD","file":"main.min.css","sourcesContent":["body {\n  font-family: 'Roboto', sans-serif;\n  font-weight: 400;\n  font-size: 1rem; }\n\n@import 'header/index.sass';\n@import 'footer/index.sass';\n"]}
