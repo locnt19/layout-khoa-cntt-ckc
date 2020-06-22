@@ -1,6 +1,10 @@
 .header{
     height: 15%;
 }
+._header_navbar--logo{
+    width: 320px;
+    height: auto;
+}
 .body_home{
     height: 70%;
 }
