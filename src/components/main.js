@@ -41,6 +41,7 @@ function allSliderFuntion() {
     spaceBetween: 15,
     speed: 2500,
     slideToClickedSlide: true,
+    simulateTouch: false,
     effect: 'coverflow',
     coverflowEffect: {
       rotate: 50,
