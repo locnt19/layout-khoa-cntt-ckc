@@ -17,4 +17,71 @@ body {
 .highlight_home__slider__thumbnail .highlight_home__slider__item.active {
   font-weight: 900; }
 
+.job_home__title hr {
+  display: block;
+  z-index: -1;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%; }
+
+.job_home__logo_company {
+  flex: 0 0 128px;
+  max-width: 128px;
+  height: 128px;
+  overflow: hidden;
+  border-radius: 0.25rem; }
+  .job_home__logo_company img {
+    max-width: 100%; }
+
+.job_home__skill span + span {
+  margin-left: 4px; }
+
+.gallery_home__slider .swiper-wrapper {
+  align-items: center;
+  padding-bottom: 30px; }
+
+.gallery_home__slider .swiper-slide img {
+  -webkit-filter: grayscale(100%);
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  filter: grayscale(100%);
+  transition: all .5s ease-in-out; }
+
+.gallery_home__slider .swiper-slide-active img {
+  -webkit-filter: grayscale(0);
+  filter: grayscale(0); }
+
+.gallery_home__slider .swiper-pagination {
+  bottom: 0; }
+
+@media screen and (min-width: 768px) {
+  .gallery_home__slider .swiper-wrapper {
+    padding: 30px 0 40px; }
+  .gallery_home__slider .swiper-slide img {
+    transform: scale3d(0.9, 0.9, 0.9); }
+  .gallery_home__slider .swiper-slide-active img {
+    transform: scale3d(1.1, 1.1, 1.1); }
+  .gallery_home__slider .swiper-pagination {
+    bottom: 0; } }
+
+.partner_home__item img {
+  max-width: 96px; }
+
+@media screen and (min-width: 768px) {
+  .partner_home__item {
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+    transition: all .15s ease-in-out; }
+    .partner_home__item img {
+      max-width: 150px; }
+    .partner_home__item:hover {
+      border-color: #007DC6;
+      box-shadow: 0 0 8px 0 silver; } }
+
+@media screen and (min-width: 768px) {
+  .partner_home__desc {
+    margin: 8px 10px 0; } }
+
 /*# sourceMappingURL=main.min.css.map */

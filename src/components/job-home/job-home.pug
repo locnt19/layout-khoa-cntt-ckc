@@ -1,5 +1,46 @@
-section.job_home__wrapper
+section.job_home__wrapper.mt-5
   .container
-    .row
-      .col-md-5 hi
-      .col-md-7 hi
+    .row.justify-content-between
+      .col-md-5.d-flex.align-items-center
+        .job_home__desc
+          .h3.m-0 Tuyển dụng lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus debitis dicta soluta. Voluptate, explicabo porro. Lorem ipsum dolor sit amet.
+      .col-md-6
+        .job_home__title.text-uppercase.text-center.font-weight-bold.position-relative
+          .d-inline-block.bg-white.px-3 Việc làm
+          hr.m-0
+        .job_home__slider.swiper-container.mt-2
+          .swiper-wrapper
+            .swiper-slide
+              .job_home__slider__item.d-flex
+                a(href='#').job_home__logo_company.p-3.d-flex.justify-content-center.align-items-center.border
+                  img.lazy(data-src='https://scontent.fvca1-1.fna.fbcdn.net/v/t1.0-9/29262093_922577841233369_3777406020091904000_o.png?_nc_cat=106&_nc_sid=174925&_nc_ohc=ROgKRh_bcloAX8qs2I_&_nc_ht=scontent.fvca1-1.fna&oh=ee22198555a1a3b89a1b02a2743e7981&oe=5F1830F2' alt='Logo Cao Thắng')
+                .ml-3
+                  a(href='#').text-reset.h5.mb-0.job_home__sub_title [TUYỂN DỤNG] CÔNG TY CỔ PHẦN TIN HỌC MINH THÔNG
+                  .job_home__sub_desc
+                  .small.mdi.mdi-clock-outline
+                    span.ml-1 23/06/2020
+                  .mt-1 Vị trí: 
+                    strong Front End developer
+                  .job_home__skill.mt-1
+                    span.badge.badge-success Java
+                    span.badge.badge-success Phần mềm
+            .swiper-slide
+              .job_home__slider__item.d-flex
+                a(href='#').job_home__logo_company.p-3.d-flex.justify-content-center.align-items-center.border
+                  img.lazy(data-src='https://cdn.itviec.com/employers/fpt-software/logo/w170/mir3HT3xtedbECJY5jVeRRgV/fpt-software-logo.png' alt='Logo FPT Software')
+                .ml-3
+                  a(href='#').text-reset.h5.mb-0.job_home__sub_title [TUYỂN DỤNG] FPT Software
+                  .job_home__sub_desc
+                  .small.mdi.mdi-clock-outline
+                    span.ml-1 23/06/2020
+                  .mt-1 Vị trí: 
+                    strong Fullstack developer
+                  .job_home__skill.mt-1
+                    span.badge.badge-success Javascript
+                    span.badge.badge-success Phần mềm
+        hr.mb-0
+        .d-flex.align-items-center.justify-content-between
+          a(href='#').text-muted Xem tất cả
+          .job_home__slider__navigation.text-muted
+            span.prev.mdi.mdi-chevron-left.mdi-24px
+            span.next.mdi.mdi-chevron-right.mdi-24px
