@@ -2,5 +2,10 @@ body {
   font-family: 'Roboto', sans-serif;
   font-size: 1rem;
   font-weight: 400; }
-
-/*# sourceMappingURL=main.min.css.map */
+.header_navbar--collapse{
+  padding:0% 0% 0% 35%;
+}
+.swiper-container {
+  width: 600px;
+  height: 300px;
+}
