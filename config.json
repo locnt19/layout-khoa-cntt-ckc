@@ -6,7 +6,7 @@
       "bower_components/linearicons/dist/web-font/fonts/*"
     ],
     "css": [
-      "src/assets/custom/bootstrap.min.css",
+      "bower_components/bootstrap/dist/css/bootstrap.min.css",
       "bower_components/swiper/package/css/swiper.min.css",
       "bower_components/mdi/css/materialdesignicons.min.css",
       "bower_components/font-awesome/css/all.min.css",
