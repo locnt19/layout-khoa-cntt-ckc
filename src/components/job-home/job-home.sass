@@ -7,15 +7,28 @@
       left: 0
       display: block
       width: 100%
+  &__sub_title
+    font-weight: 700
+  &__desc
+    @media screen and ( min-width: 992px )
+      font-size: 1.25em
+    &__title
+      font-size: 1.25rem
+      @media screen and ( min-width: 992px )
+        font-size: 1.5rem
   &__logo_company
-    flex: 0 0 128px
-    height: 128px
-    max-width: 128px
-    // background: #fff
+    flex: 0 0 64px
+    height: 64px
+    max-width: 64px
+    background: #fff
     border-radius: 0.25rem
     overflow: hidden
     img
       max-width: 100%
+    @media screen and ( min-width: 768px )
+      flex: 0 0 128px
+      height: 128px
+      max-width: 128px
   &__skill
     span + span
       margin-left: 4px

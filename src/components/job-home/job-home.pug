@@ -1,21 +1,22 @@
 section.job_home__wrapper.mt-5
   .container
-    .row.justify-content-between
-      .col-md-5.d-flex.align-items-center
+    .row.justify-content-between.align-items-center
+      .col-md-6.pr-md-5.d-flex
         .job_home__desc
-          .h3.m-0 Tuyển dụng lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus debitis dicta soluta. Voluptate, explicabo porro. Lorem ipsum dolor sit amet.
-      .col-md-6
+          .job_home__desc__title.text-center.text-md-left.text-uppercase(style='font-weight: 900') Tuyển dụng 
+          .text-justify.text-md-left MyWork đang nằm trong TOP 3 nhà tuyển dụng trực tuyến tại Việt Nam và hướng đến mục tiêu trở thành đơn vị cung cấp dịch vụ tuyển dụng trực tuyến số 1 trong thời gian tới; trở thành một sàn nghề nghiệp dễ sử dụng, truy cập và là một địa chỉ không thể thiếu cho thị trường lao động Việt Nam.
+      .col-md-6.mt-3.mt-md-0
         .job_home__title.text-uppercase.text-center.font-weight-bold.position-relative
-          .d-inline-block.bg-white.px-3 Việc làm
+          .job_home__desc.d-none.d-md-inline-block.bg-white.px-3 Việc làm
           hr.m-0
-        .job_home__slider.swiper-container.mt-2
+        .job_home__slider.swiper-container.mt-3.mt-md-2
           .swiper-wrapper
             .swiper-slide
               .job_home__slider__item.d-flex
-                a(href='#').job_home__logo_company.p-3.d-flex.justify-content-center.align-items-center.border
-                  img.lazy(data-src='https://scontent.fvca1-1.fna.fbcdn.net/v/t1.0-9/29262093_922577841233369_3777406020091904000_o.png?_nc_cat=106&_nc_sid=174925&_nc_ohc=ROgKRh_bcloAX8qs2I_&_nc_ht=scontent.fvca1-1.fna&oh=ee22198555a1a3b89a1b02a2743e7981&oe=5F1830F2' alt='Logo Cao Thắng')
-                .ml-3
-                  a(href='#').text-reset.h5.mb-0.job_home__sub_title [TUYỂN DỤNG] CÔNG TY CỔ PHẦN TIN HỌC MINH THÔNG
+                a(href='#').job_home__logo_company.p-1.p-md-3.d-flex.justify-content-center.align-items-center.border
+                  img.swiper-lazy(data-src='https://scontent.fvca1-1.fna.fbcdn.net/v/t1.0-9/29262093_922577841233369_3777406020091904000_o.png?_nc_cat=106&_nc_sid=174925&_nc_ohc=ROgKRh_bcloAX8qs2I_&_nc_ht=scontent.fvca1-1.fna&oh=ee22198555a1a3b89a1b02a2743e7981&oe=5F1830F2' alt='Logo Cao Thắng')
+                .ml-2.ml-md-3
+                  a(href='#').text-reset.mb-0.job_home__sub_title [TUYỂN DỤNG] CÔNG TY CỔ PHẦN TIN HỌC MINH THÔNG
                   .job_home__sub_desc
                   .small.mdi.mdi-clock-outline
                     span.ml-1 23/06/2020
@@ -26,10 +27,10 @@ section.job_home__wrapper.mt-5
                     span.badge.badge-success Phần mềm
             .swiper-slide
               .job_home__slider__item.d-flex
-                a(href='#').job_home__logo_company.p-3.d-flex.justify-content-center.align-items-center.border
-                  img.lazy(data-src='https://cdn.itviec.com/employers/fpt-software/logo/w170/mir3HT3xtedbECJY5jVeRRgV/fpt-software-logo.png' alt='Logo FPT Software')
-                .ml-3
-                  a(href='#').text-reset.h5.mb-0.job_home__sub_title [TUYỂN DỤNG] FPT Software
+                a(href='#').job_home__logo_company.p-1.p-md-3.d-flex.justify-content-center.align-items-center.border
+                  img.swiper-lazy(data-src='https://cdn.itviec.com/employers/fpt-software/logo/w170/mir3HT3xtedbECJY5jVeRRgV/fpt-software-logo.png' alt='Logo FPT Software')
+                .ml-2.ml-md-3
+                  a(href='#').text-reset.mb-0.job_home__sub_title [TUYỂN DỤNG] FPT Software
                   .job_home__sub_desc
                   .small.mdi.mdi-clock-outline
                     span.ml-1 23/06/2020
@@ -38,7 +39,7 @@ section.job_home__wrapper.mt-5
                   .job_home__skill.mt-1
                     span.badge.badge-success Javascript
                     span.badge.badge-success Phần mềm
-        hr.mb-0
+        hr.mt-3.mb-0
         .d-flex.align-items-center.justify-content-between
           a(href='#').text-muted Xem tất cả
           .job_home__slider__navigation.text-muted

@@ -1,6 +1,9 @@
 .highlight_home
   &__title
-    @media screen and ( min-width: 768px )
+    font-size: 1.25rem
+    font-weight: 900
+    @media screen and ( min-width: 992px )
+      font-size: 2rem
       width: 150%
   &__subtitle
     overflow: hidden
@@ -8,6 +11,19 @@
     text-overflow: ellipsis
     -webkit-line-clamp: 3
     -webkit-box-orient: vertical
+  &__read
+    font-size: 14px
+  &__boxlink
+    width: 32px
+    height: 32px
+    font-size: 16px
+    right: 0
+    bottom: 0
+    @media screen and ( min-width: 992px )
+      width: 42px
+      height: 42px
+      font-size: 24px
   &__slider__thumbnail
-    .highlight_home__slider__item.active
+    .highlight_home__slider__item.active,
+    .swiper-slide-thumb-active
       font-weight: 900
