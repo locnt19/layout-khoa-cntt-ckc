@@ -15,7 +15,11 @@
   &__title
     display: inline-block
     position: relative
-    font-size: 24px
+    font-size: 20px
+    @media screen and ( min-width: 768px )
+      font-size: 28px
+    @media screen and ( min-width: 992px )
+      font-size: 32px
     &:before
       content: ''
       width: 120%
@@ -26,8 +30,6 @@
       left: 50%
       transform: translateX(-50%)
       z-index: -1
-    @media screen and ( min-width: 768 )
-      font-size: 32px
   &__main
     position: relative
     &::before
