@@ -28,7 +28,6 @@ body {
   padding-top:40%;
   font-size: 20px;
 }
-
 /*----------footer css*/
 .footer{
   background-color: #3c3d41;
@@ -102,6 +101,10 @@ margin-bottom:10px;
   height: 100%;
   width: 100%;
   position: absolute;
+}
+/*----------category*/
+.align-items-center{
+  margin-top:5%
 }
 /*----------------------------------------------------------------END HIU*/
 .highlight_home__subtitle {
