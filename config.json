@@ -7,6 +7,7 @@
     ],
     "css": [
       "bower_components/bootstrap/dist/css/bootstrap.min.css",
+      "node_modules/bootstrap-material-design/css/mdb.min.css",
       "bower_components/swiper/package/css/swiper.min.css",
       "bower_components/mdi/css/materialdesignicons.min.css",
       "bower_components/font-awesome/css/all.min.css",
@@ -16,6 +17,7 @@
     "js": [
       "bower_components/jquery/dist/jquery.min.js",
       "bower_components/bootstrap/dist/js/bootstrap.bundle.min.js",
+      "node_modules/bootstrap-material-design/js/mdb.min.js",
       "bower_components/swiper/package/js/swiper.min.js",
       "bower_components/vanilla-lazyload/dist/lazyload.min.js"
     ]
