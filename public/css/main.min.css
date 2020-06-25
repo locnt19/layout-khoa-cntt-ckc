@@ -11,20 +11,22 @@ body {
   /*padding: 0 0 0 35%;*/
   text-align:center;
 }
-
 .feature_home__item{
+  margin-top: 5px;
+  margin-right: 5px;
+  width: 200px;
+  height: 200px;
+  margin-left: 5px;
+}
+.feature_home__item__title{
   text-align:center;
   width:100%;
   background-color: aquamarine;
-  width: 272px;
-  height: 272px;
-
-}
-#feature_home__item{
-  padding: 5px 5px 5px 5px;
-  width: 272px;
-  height: 272px;
-  margin-top: 5px;
+  width: 195px;
+  height: 200px;
+  text-align:center;
+  padding-top:40%;
+  font-size: 20px;
 }
 
 /*----------footer css*/

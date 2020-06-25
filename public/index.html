@@ -39,10 +39,14 @@
 	<div class="header">
 		<nav class="navbar navbar-expand-lg navbar-light white">
 			<div class="container-fluid">
-				<a class="navbar-brand" href="#">
-					<img src="img/logo.jpg" height="30" alt="logo">
-				</a>
+				<div class="header_navbar__logo col-md-1">
+					<a class="navbar-brand" href="#">
+						<img src="img/logo.jpg" height="30" alt="logo">
+					</a>
+				</div>
 				<!-- Collapse button -->
+
+				<div class="col-md-2"></div>
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
 					aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
@@ -50,32 +54,35 @@
 				<!-- Links -->
 				<div class="header_navbar--collapse collapse navbar-collapse" id="basicExampleNav">
 					<!-- Left -->
-					<ul class="navbar-nav mr-auto">
-						<li class="nav-item">
-							<a class="nav-link waves-effect" href="https://mdbootstrap.com/docs/jquery/"
-								target="_blank">jQuery</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link waves-effect" href="https://mdbootstrap.com/docs/angular/"
-								target="_blank">Angular</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link waves-effect" href="https://mdbootstrap.com/docs/react/"
-								target="_blank">React</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link waves-effect" href="https://mdbootstrap.com/docs/vue/"
-								target="_blank">Vue</a>
-						</li>
-					</ul>
+					<div class="header_navbar__left col-md-7">
+						<ul class="navbar-nav mr-auto">
+							<li class="nav-item">
+								<a class="nav-link waves-effect" href="#" target="_blank">Trang chủ</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link waves-effect" href="#" target="_blank">Giới thiệu</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link waves-effect" href="#" target="_blank">E-Learning</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link waves-effect" href="#" target="_blank">Tin tức</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link waves-effect" href="#" target="_blank">Sinh viên</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link waves-effect" href="#" target="_blank">Hợp tác nghiên cứu</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link waves-effect" href="#" target="_blank">Trung tâm Tin học</a>
+							</li>
+						</ul>
+					</div>
 					<!-- Right -->
-					<ul class="navbar-nav nav-flex-icons w-25">
-						<li class="nav-item">
-
-						</li>
-					</ul>
+					<div class="header_navbar__left col-2">
+					</div>
 				</div>
-			</div>
 		</nav>
 		<!--/.Navbar-->
 	</div>
@@ -180,34 +187,36 @@
 			</div>
 		</section>
 		<section class="feature_home">
-			<div class="feature_home__title h2 mt-4 pr-4 py-4 bg-white text-uppercase container">[Tiện ích SV]
+			<div class="feature_home__title h2 mt-4 pr-4 py-4 bg-white text-uppercase text-center container">[Tiện ích
+				SV]
 				<div class="row">
-					<div class="col-3 " id="feature_home__item">
-						<div class="feature_home__item p-5">
+					<div class="col-md-2"></div>
+					<div class="col-md-2 col-sm-6 feature_home__item">
+						<div class="feature_home__item__title">
 							<i class="fab fa-stack-overflow"></i>
 							<span>
 								<p>Tài liệu học tập</p>
 							</span>
 						</div>
 					</div>
-					<div class="col-3 " id="feature_home__item">
-						<div class="feature_home__item p-5">
+					<div class="col-md-2 col-sm-6 feature_home__item">
+						<div class="feature_home__item__title">
 							<i class="fas fa-search"></i>
 							<span>
 								<p>Tra cứu điểm thi</p>
 							</span>
 						</div>
 					</div>
-					<div class=" col-3 " id="feature_home__item">
-						<div class="feature_home__item p-5">
+					<div class="col-md-2 col-sm-6 feature_home__item">
+						<div class="feature_home__item__title">
 							<i class="fas fa-briefcase"></i>
 							<span>
 								<p>Giới thiệu việc làm</p>
 							</span>
 						</div>
 					</div>
-					<div class=" col-3 " id="feature_home__item">
-						<div class="feature_home__item p-5">
+					<div class="col-md-2 col-sm-6 feature_home__item">
+						<div class="feature_home__item__title">
 							<i class="fas fa-school"></i>
 							<span>
 								<p>lớp học trực tuyến</p>
@@ -216,32 +225,33 @@
 					</div>
 				</div>
 				<div class="row">
-					<div class=" col-3 " id="feature_home__item">
-						<div class="feature_home__item p-5">
+					<div class="col-md-2"></div>
+					<div class="col-md-2 col-sm-6 feature_home__item">
+						<div class="feature_home__item__title">
 							<i class="fas fa-user-graduate"></i>
 							<span>
 								<p>Cựu sinh viên
 							</span></span>
 						</div>
 					</div>
-					<div class=" col-3 " id="feature_home__item">
-						<div class="feature_home__item p-5">
+					<div class="col-md-2 col-sm-6 feature_home__item">
+						<div class="feature_home__item__title">
 							<i class="fas fa-list-alt"></i>
 							<span>
 								<p>Danh sách học phần</p>
 							</span>
 						</div>
 					</div>
-					<div class=" col-3 " id="feature_home__item">
-						<div class="feature_home__item p-5">
+					<div class="col-md-2 col-sm-6 feature_home__item">
+						<div class="feature_home__item__title">
 							<i class="fas fa-atom"></i>
 							<div>
 								<p>Trung tâm Tin học</p>
 							</div>
 						</div>
 					</div>
-					<div class=" col-3 " id="feature_home__item">
-						<div class="feature_home__item p-5">
+					<div class="col-md-2 col-sm-6 feature_home__item">
+						<div class="feature_home__item__title">
 							<i class="fas fa-calendar-alt"></i>
 							<div>
 								<p>Lịch thi</p>
@@ -256,8 +266,8 @@
 				<!----------- Footer ------------>
 				<footer class="footer-bs">
 					<div class="row">
-						<div class="col-4 footer-brand animated fadeInLeft">
-							<h2><img id="footer_logo" src="img/logo.jpg"></h2>
+						<div class="col-md-4 footer-brand animated fadeInLeft">
+							<h2><img id="footer_logo" src="img/logo_footer.jpg"></h2>
 							<ul class="text-lg-left list-unstyled ml-4">
 								<li>
 									<p><i class="fas fa-map-marker-alt pr-2"></i>Lầu 7 (Dãy nhà F)
@@ -271,36 +281,35 @@
 								</li>
 							</ul>
 						</div>
-						<div class="col-1 footer-nav animated fadeInUp">
-							<h4>Menu —</h4>
-							<div class="col-1">
+						<div class="col-md-3 footer-nav animated fadeInUp">
+							<h4>Trang chủ —</h4>
+							<div class="">
 								<ul class="pages">
-									<li><a href="#">Travel</a></li>
-									<li><a href="#">Nature</a></li>
-									<li><a href="#">Explores</a></li>
-									<li><a href="#">Science</a></li>
-									<li><a href="#">Advice</a></li>
+									<li><a href="#">Giới thiệu</a></li>
+									<li><a href="#">E-Learning</a></li>
+									<li><a href="#">Tin tức</a></li>
+									<li><a href="#">Sinh viên</a></li>
+									<li><a href="#">Hợp tác nghiên cứu</a></li>
+									<li><a href="#">Trung tâm Tin học</a></li>
 								</ul>
 							</div>
 						</div>
-						<div class="col-2 footer-nav animated fadeInUp">
-							<div class="col-2">
-								<h4>Page —</h4>
+						<div class="col-md-3 footer-nav animated fadeInUp">
+							<div class="">
+								<h4>Hệ đào tạo —</h4>
 								<ul class="pages">
-									<li><a href="#">About Us</a></li>
-									<li><a href="#">Contacts</a></li>
-									<li><a href="#">Terms & Condition</a></li>
-									<li><a href="#">Privacy Policy</a></li>
+									<li><a href="#">Cao đẳng tin học</a></li>
+									<li><a href="#">Cao Đẳng Nghề Quản Trị Mạng</a></li>
+									<li><a href="#">Cao Đẳng Nghề SCLRMT</a></li>
 								</ul>
 							</div>
 						</div>
-						<div class="col-2 footer-social animated fadeInDown">
+						<div class="col-md-2 footer-social animated fadeInDown">
 							<h4>Follow Us</h4>
 							<ul>
 								<li><a href="#">Facebook</a></li>
 								<li><a href="#">Twitter</a></li>
 								<li><a href="#">Instagram</a></li>
-								<li><a href="#">RSS</a></li>
 							</ul>
 						</div>
 					</div>
