@@ -1,0 +1,99 @@
+header.header_master.sticky-top
+  .header_desktop.d-none.d-lg-block.px-3.py-2
+    nav.header_navbar.d-flex.align-items-center.text-uppercase
+      a(href='#').d-block
+        img.header_logo__desktop(src='img/logo/logo.jpg' alt='logo Cao Thắng')
+      nav.nav.header_navbar__nav
+        li.nav-item
+          a(href='#').nav-link Trang Chủ
+        li.nav-item
+          a(href='#').nav-link Giới thiệu
+        li.nav-item
+          a(href='#').nav-link Tin tức
+        li.nav-item
+          a(href='#').nav-link Sinh viên
+        li.nav-item
+          a(href='#').nav-link Thông báo
+        li.nav-item
+          a(href='#').nav-link E-Learning
+        li.nav-item
+          a(href='#').nav-link Việc làm
+      form.header_search.ml-auto
+        input.header_search__input(type='text' placeholder='Hãy nhập gì đó...')
+        button.header_search__button(type='reset')
+
+  .header_mobile.d-lg-none
+    a(href='index.html')
+      img.header_logo__mobile(src='img/logo/logo.jpg' alt='logo.jpg')
+    a(href='#' role='button').offcanvas_button__open.mdi.mdi-menu
+    .offcanvas.offcanvas_overlay
+      .offcanvas_bar
+        .offcanvas_header
+          a(href='index.html')
+            img.lazy.offcanvas_header__logo(data-src='img/logo/logo.jpg' alt='logo.jpg')
+        ul.offcanvas_nav
+          li.offcanvas_nav__item
+            a(href='#').offcanvas_nav__link
+              span.offcanvas_icons.mdi.mdi-home
+              span.text Trang chủ
+          li.offcanvas_nav__item
+            a(href='#').offcanvas_nav__link
+              span.offcanvas_icons.mdi.mdi-information-outline
+              //- span.offcanvas_icons.mdi.mdi-information-variant
+              span.text Giới thiệu
+          li.offcanvas_nav__item
+            a(href='#').offcanvas_nav__link
+              span.offcanvas_icons.mdi.mdi-alarm-light
+              span.text Thông báo
+          li.offcanvas_nav__item
+            a(href='#').offcanvas_nav__link
+              span.offcanvas_icons.mdi.mdi-phone
+              span.text Liên hệ
+          li.offcanvas_nav__divider
+          li.offcanvas_nav__item
+            a(href='#').offcanvas_nav__link
+              span.offcanvas_icons.mdi.mdi-domain
+              //- span.offcanvas_icons.mdi.mdi-storefront
+              span.text Trung tâm Tin học
+          li.offcanvas_nav__item
+            a(href='#').offcanvas_nav__link
+              span.offcanvas_icons.mdi.mdi-layers-triple-outline
+              span.text Danh sách học phần
+          li.offcanvas_nav__item
+            a(href='#').offcanvas_nav__link
+              span.offcanvas_icons.mdi.mdi-stack-overflow
+              span.text Tài liệu học tập
+          li.offcanvas_nav__item
+            a(href='#').offcanvas_nav__link
+              span.offcanvas_icons.mdi.mdi-near-me
+              span.text Cơ hội việc làm
+          li.offcanvas_nav__item
+            a(href='#').offcanvas_nav__link
+              span.offcanvas_icons.mdi.mdi-laptop
+              span.text E-learning
+          li.offcanvas_nav__item
+            a(href='#').offcanvas_nav__link
+              span.offcanvas_icons.mdi.mdi-school
+              span.text Cựu Sinh viên
+            ul.offcanvas_nav__sub
+              li.offcanvas_nav__item
+                a(href='#').offcanvas_nav__link
+                  span.offcanvas_icons.mdi.mdi-home-outline
+                  span.text Nav sub 1
+              li.offcanvas_nav__item
+                a(href='#').offcanvas_nav__link
+                  span.offcanvas_icons.mdi.mdi-information-outline
+                  span.text Nav sub 2
+          li.offcanvas_nav__item
+            a(href='#').offcanvas_nav__link
+              span.offcanvas_icons.mdi.mdi-folder-account
+              span.text Tra cứu thông tin học viên
+          li.offcanvas_nav__item
+            a(href='#').offcanvas_nav__link
+              span.offcanvas_icons.mdi.mdi-calendar-check
+              span.text Lịch thi
+          li.offcanvas_nav__divider
+          li.offcanvas_nav__item
+            div(role='button').d-block.offcanvas_button__close
+              span.offcanvas_icons.mdi.mdi-close
+              | Đóng
