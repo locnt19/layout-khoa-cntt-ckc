@@ -78,25 +78,13 @@ function headerSearch() {
 
 //#region scrollup - scrolldown event
 function eventScrollUpScrollDown() {
-  var previousScroll = document.documentElement.scrollTop
   window.addEventListener('scroll', function () {
-    // back to top
-    // if (document.documentElement.scrollTop > 100) {
-    //   document.querySelector('.btn-back-2-top').style.visibility = 'visible'
-    //   document.querySelector('.btn-back-2-top').style.opacity = '1'
-    // } else {
-    //   document.querySelector('.btn-back-2-top').style.visibility = 'hidden'
-    //   document.querySelector('.btn-back-2-top').style.opacity = '0'
-    // }
-    // add class to header when scroll
-    if (document.documentElement.scrollTop >= previousScroll) {
-      // console.log('down')
-      document.querySelector('.header_master').classList.add('scroll-down')
-      previousScroll = document.documentElement.scrollTop
-    } else if (document.documentElement.scrollTop < previousScroll) {
-      // console.log('up')
-      document.querySelector('.header_master').classList.remove('scroll-down')
-      previousScroll = document.documentElement.scrollTop
+    if (document.documentElement.scrollTop > 100) {
+      document.querySelector('.button_BackToTop').style.visibility = 'visible'
+      document.querySelector('.button_BackToTop').style.opacity = '1'
+    } else {
+      document.querySelector('.button_BackToTop').style.visibility = 'hidden'
+      document.querySelector('.button_BackToTop').style.opacity = '0'
     }
   })
 }
