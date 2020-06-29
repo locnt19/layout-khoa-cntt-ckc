@@ -1,0 +1,338 @@
+.job_page__search
+  width: 100%
+  display: flex
+  flex-wrap: wrap
+
+.job_page__search__input, .job_page__search__select, .job_page__search__button
+  height: 48px !important
+  align-items: center
+
+.job_page__search__input
+  &.focused, &:focus
+    box-shadow: none
+
+.job_page__search__select
+  &.focused, &:focus
+    box-shadow: none
+
+.job_page__search__button
+  &.focused, &:focus
+    box-shadow: none
+
+.job_page__search__input
+  margin-bottom: 10px
+  flex: 0 0 100%
+
+  input
+    padding-left: 0
+    height: 100%
+
+  .prepend
+    background: none
+    color: #d9d9d9
+
+  .mdi
+    font-size: 20px
+
+.job_page__search__select
+  flex: 1 0 0
+  margin-right: 10px
+  user-select: none
+
+.job_page__search__button
+  border: none
+  outline: none
+  flex: 0 0 100px
+  background: #E09F1F
+  color: #ffffff
+  font-weight: 700
+  cursor: pointer
+
+  &:hover
+    background: #e6b24c
+
+.job_page__search__recent
+  position: absolute
+  box-shadow: 0 0 4px 0 #000
+  top: 100%
+  left: 0
+  margin-top: 16px
+  background: #ffffff
+  z-index: 3
+  display: none
+
+  &.show
+    display: flex
+    flex-direction: column
+
+  .title
+    color: silver
+    font-size: 14px
+    margin-bottom: 16px
+
+  .item
+    font-size: 15px
+    margin-bottom: 8px
+    line-height: 1.15
+
+    span:nth-of-type(2)
+      font-size: 12px
+      margin-left: 6px
+
+  .recent
+    flex: 0 0 30%
+    padding: 16px
+
+  .recommend
+    flex: 1 0 0
+    padding: 16px
+
+    .item
+      display: inline-block
+      border: 1px solid silver
+      margin-right: 10px
+      margin-bottom: 10px
+      padding: 4px 12px
+      border-radius: 99px
+      transition: all 0.1s ease-in
+
+      &:hover
+        color: #fff
+        background: #007DC4
+        border-color: #007DC4
+        box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.5)
+
+.job_page__search__close
+  font-size: 14px
+  width: 16px
+  height: 16px
+  line-height: 16px
+  border: 1px solid #000
+  border-radius: 99px
+  display: flex
+  align-items: center
+  justify-content: center
+  position: absolute
+  top: 6px
+  right: 6px
+  z-index: 2
+  cursor: pointer
+
+@media screen and (min-width: 768px)
+  .job_page__search__input
+    flex: 1 0 0
+    margin-bottom: 0
+  .job_page__search__select
+    flex: 0 0 200px
+    margin-right: 0
+  .job_page__search__button
+    flex: 0 0 150px
+  .job_page__search__recent.show
+    flex-direction: row
+.vl-list_box
+  position: relative
+  padding: 0 8px
+  &:hover
+    background: #fff
+    border-radius: 4px
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.35)
+  .action
+    position: static
+  .job-luong
+    white-space: nowrap
+  .job-diadiem
+    overflow: hidden
+    text-overflow: ellipsis
+.vl-list_btn--heart
+  color: #747474
+  display: inline-block
+  width: 24px
+  height: 24px
+  text-align: center
+
+  &:hover
+    .mdi-heart-outline
+      display: none
+    .mdi-heart-outline-red
+      display: block
+
+.vl-list_posted
+  color: #747474
+
+.vl-list_info
+  font-size: 14px
+
+.vl-list_pagination
+  ul
+    justify-content: center
+
+.job-box
+  display: flex
+  align-items: center
+  padding: 0 8px 0 0
+  border-bottom: 1px solid silver
+  box-shadow: 0 -1px 0 0 silver
+
+li
+  list-style: none
+
+.text-bold
+  font-weight: 700 !important
+
+.text-small
+  font-size: .75rem
+  font-weight: 400
+
+.job-box .img
+
+
+
+
+  display: flex
+  align-items: center
+  justify-content: center
+  width: 64px
+  height: 64px
+
+.job-box_subtitle, .job-box_title
+
+
+
+  overflow: hidden
+  text-overflow: ellipsis
+
+.job-box .info
+
+  flex: 1 0 0
+  padding: 8px 0 8px 8px
+
+.vl-list_box .job-luong
+  white-space: nowrap
+  color: red
+
+.job-box
+  .img, &:hover
+    border-radius: 4px
+    background: #fff
+
+  .img img
+    max-width: 100%
+
+.vl-company
+  background: #fff
+  padding: 0 8px
+  border-radius: 4px
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.35)
+
+.vl-company_title
+  line-height: 1
+  font-weight: 700
+  text-align: center
+  padding: 16px 8px 8px
+  margin-bottom: 14px
+  border-bottom: 1px solid rgba(0, 0, 0, 0.35)
+
+.vl-company_headline img
+  width: 100%
+
+.vl-company_logo
+
+
+
+
+
+  display: flex
+  align-items: center
+  justify-content: center
+  width: 72px
+  height: 72px
+  margin: 0 auto 16px
+  border: 1px solid rgba(0, 0, 0, 0.35)
+  border-radius: 4px
+  background: #fff
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.35)
+
+  img
+    max-width: 100%
+
+.vl-company_box
+  padding-bottom: 25px
+
+.vl-company_name
+  font-size: 18px
+  font-weight: 700
+  text-transform: uppercase
+  text-align: center
+  line-height: 1.15
+
+.vl-company_job--item
+  border-top: 1px solid rgba(0, 0, 0, 0.35)
+  padding: 8px 0
+
+.job_page__sort_btn--newest
+  margin-left: auto
+  text-decoration: underline !important
+  cursor: pointer
+
+.mdi-heart-outline-red
+  display: none
+
+  &:before
+    color: #f33
+
+.text-secondary
+  font-size: .875rem
+  font-weight: 400
+
+.job_page__sort
+  display: flex
+  flex-wrap: wrap
+  align-items: center
+
+.job_page__sort_select
+  margin-top: 0
+  flex: 0 0 auto
+  width: auto
+  margin-left: 12px
+  border: 1px solid #d9d9d9
+  padding: 6px
+
+@media screen and (max-width: 767.98px)
+  .vl-list_box
+    flex-wrap: wrap
+
+    .info
+      padding-right: 0
+      padding-left: 8px
+
+    .action
+      width: 100%
+      flex: 0 0 100%
+      display: flex
+      align-items: center
+      margin-bottom: 8px
+
+  .vl-list_btn--heart
+    order: 1
+    margin-left: auto
+
+  .vl-list_posted
+    font-size: 0.75rem
+
+  .job_page__sort_select
+
+    flex: 0 0 100%
+    margin-left: 0
+    margin-top: 8px
+
+@media screen and (min-width: 768px)
+  .vl-list_btn--heart
+    position: absolute
+    top: 8px
+    right: 8px
+    text-align: right
+
+  .vl-list_posted
+    position: absolute
+    bottom: 8px
+    right: 8px

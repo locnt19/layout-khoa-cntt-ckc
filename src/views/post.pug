@@ -1,0 +1,45 @@
+extends _layout.pug
+
+block var
+  -var title = 'Chi tiết bài viết'
+
+block main
+  include ../components/banner-home/banner-home.pug
+  include ../components/breadcrumb/breadcrumb.pug
+  .container.mt-3.py-5.z-depth-1
+    section.mx-md-5.dark-grey-text
+      .row
+        .col-md-12
+          div
+            .view.view-cascade.overlay
+              img.card-img-top(src='https://mdbootstrap.com/img/Photos/Slides/img%20(142).jpg' alt='Sample image')
+              a(href='#!')
+                .mask.rgba-white-slight
+            .mt-3.text-center
+              h3.font-weight-bold
+                a Title of the news
+              p
+                | Written by 
+                a
+                  strong Abby Madison
+                | , 26/08/2018
+          .mt-5
+            p
+              | At vero eos et accusamus et iusto odio dignissimos ducimus qui praesentium voluptatum
+              | deleniti atque
+              | corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non
+              | provident, similique
+              | sunt in culpa nemo enim ipsam voluptatem quia voluptas sit qui officia deserunt mollitia
+              | animi, id
+              | est laborum et dolorum fuga quidem rerum facilis est distinctio.
+            p
+              | Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id
+              | quod
+              | maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.
+              | Quis autem vel
+              | eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur.
+              | Temporibus
+              | autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et
+              | voluptates
+              | repudiandae sint et molestiae non recusandae itaque earum rerum.
+      hr.mb-5.mt-4

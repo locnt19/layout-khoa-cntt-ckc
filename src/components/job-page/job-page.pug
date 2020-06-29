@@ -1,0 +1,97 @@
+section.job_page__wrapper.mt-3
+  .container
+    .row
+      .col-12
+        form.job_page__search
+          input.job_page__search__input.no-shadow(type='text' placeholder='Tìm kiếm theo kỹ năng, chức vụ, công ty,...')
+          select.job_page__search__select
+            option(value='all') Tất cả địa điểm
+            option(value='brvt') Bà Rịa - Vũng Tàu
+            option(value='hn') Hà Nội
+            option(value='hcm') Hồ Chí Minh
+          button.job_page__search__button(type='reset') Tìm ngay
+      .col-lg-9.mt-5
+        .job_page__sort
+          h5.font-weight-bold.m-0
+            | Phần mềm
+            small.font-weight-bold.text-warning.ml-2 100+
+          a.text-reset.ml-auto(href='#') Tin mới nhất
+          select.job_page__sort_select.form-control
+            option Mức lương tăng dần
+            option Mức lương giảm dần
+        ul.vl-list.m-0.p-0.mt-4
+          -for(var i = 0; i < 5; i++)
+            li
+              article.vl-list_box.job-box
+                .img
+                  a(href='#')
+                    img.lazy(data-src='https://cdn.itviec.com/employers/fpt-software/logo/w170/mir3HT3xtedbECJY5jVeRRgV/fpt-software-logo.png' alt='image')
+                .info
+                  .job-box_title.font-weight-bold
+                    a(href='#' title='Accounting Officer (Aeonmall Tân Phú)') Accounting Officer (Aeonmall Tân Phú)
+                  .job-box_subtitle.text-small
+                    a(href='#' title='AEONMALL Vietnam Co., Ltd') AEONMALL Vietnam Co., Ltd
+                  .d-flex
+                    .job-luong.text-small.font-weight-bold 21 ~ 30tr VNĐ
+                    .job-diadiem.text-small.ml-4(title='Địa điểm')
+                      span.mdi.mdi-map-marker
+                      span.ml-1 Hồ Chí Minh
+                .action
+                  a.vl-list_btn--heart.hearted(href='#' title='Lưu việc làm')
+                    span.mdi.mdi-heart-outline
+                    span.mdi.mdi-heart-outline.mdi-heart-outline-red
+                  .vl-list_posted.text-small
+                    span.mdi.mdi-clock-check-outline
+                    span.ml-1 28/02/2020
+        .vl-list_info.mt-2
+          span Hiển thị 1 đến 8 trong 8 việc làm
+        .vl-list_pagination
+          ul.pagination
+            li.page-item.prev-page.disabled
+              a.page-link Quay lại
+            li.page-item.active
+              a.page-link 1
+            li.page-item
+              a.page-link 2
+            li.page-item
+              a.page-link 3
+            li.page-item.next-page.disabled
+              a.page-link Kế tiếp
+      .col-lg-3.mt-5
+        .vl-company.mb-4
+          .vl-company_title CÔNG TY NỔI BẬT
+          .swiper-container
+            .swiper-wrapper
+              -for(var i = 0; i < 3; i++)
+                .swiper-slide
+                  .vl-company_box
+                    .vl-company_image
+                      a.vl-company_headline(href='#')
+                        img.swiper-lazy(src='https://cdn.itviec.com/photos/46267/headline_photo/fpt-software-tuyen-dung-viec-lam-IT-headline_photo.jpg?Wvx7dpn469tvzK7JiNgeFkee' alt='fpt software')
+                      a.vl-company_logo.mt-3(href='#')
+                        img.swiper-lazy(data-src='https://cdn.itviec.com/employers/fpt-software/logo/w170/mir3HT3xtedbECJY5jVeRRgV/fpt-software-logo.png' alt='FPT Software')
+                    .vl-company_name.mb-1
+                      a(href='#') FPT Software #{i}
+                    .small.vl-company_location.text-center.mb-4 Hồ Chí Minh
+                    ul.vl-company_job.m-0.p-0
+                      li.vl-company_job--item
+                        .font-weight-bold
+                          a(href='#') Android Developer (Up to $2,000)
+                        .d-flex.text-small
+                          .job-luong.font-weight-bold
+                            span.mdi.mdi-currency-usd
+                            span 13tr trở lên
+                          .ml-4
+                            span.mdi.mdi-clock-check-outline
+                            span.ml-1 02/03/2010
+                      li.vl-company_job--item
+                        .font-weight-bold
+                          a(href='#') C/C++ Software Engineer
+                        .d-flex.text-small
+                          .job-luong.font-weight-bold
+                            span.mdi.mdi-currency-usd
+                            span 13tr ~ 20tr VNĐ
+                          .ml-4
+                            span.mdi.mdi-clock-check-outline
+                            span.ml-1 02/03/2010
+            .vl-company_pagination.text-center.mt-1.swiper-pagination

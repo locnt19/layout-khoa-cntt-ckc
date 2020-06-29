@@ -9,6 +9,7 @@ window.addEventListener('DOMContentLoaded', function () {
   sliderGalleryHome()
   sliderPartnerHome()
   sliderNewsHome()
+  sliderViecLam()
 })
 
 
@@ -270,3 +271,18 @@ function sliderNewsHome() {
   })
 }
 //#endregion
+
+function sliderViecLam() {
+  new Swiper('.vl-company .swiper-container', {
+    slidesPerView: 1,
+    lazy: true,
+    effect: 'fade',
+    fadeEffect: {
+      crossFade: true
+    },
+    pagination: {
+      el: '.vl-company .swiper-pagination',
+      clickable: true
+    },
+  });
+}

@@ -1,0 +1,67 @@
+.breadcrumb
+  &_container
+    margin: 1rem 0
+  &_nav
+    display: flex
+    flex-wrap: wrap
+    list-style: none
+    line-height: 1
+  &_item
+    display: flex
+    align-items: center
+    &:first-of-type
+      .breadcrumb_link
+        padding-left: 16px
+    &:nth-of-type(2)
+      .breadcrumb_link
+        background: lighten(#283890, 10)
+        &::before
+          border-left-color: lighten(#283890, 10)
+    &:nth-of-type(3)
+      .breadcrumb_link
+        background: lighten(#283890, 20)
+        &::before
+          border-left-color: lighten(#283890, 20)
+    &:last-of-type
+      .breadcrumb_link
+        color: inherit
+        background: #fff
+        &::before
+          border-left-color: #fff
+    .breadcrumb_link
+      color: inherit
+      display: flex
+      position: relative
+      align-items: center
+      color: #fff
+      background: #283890
+      padding: 8px 2px 8px 24px
+      max-width: 100%
+      text-overflow: ellipsis
+      -webkit-line-clamp: 1
+      display: -webkit-box
+      -webkit-box-orient: vertical
+      transition: unset
+      &:hover
+        color: inherit
+        background: #fff
+        &::before
+          border-left-color: #fff
+      &::before,
+      &::after
+        content: ''
+        width: 0
+        height: 0
+        display: block
+        border-top: 16px solid transparent
+        border-bottom: 16px solid transparent
+        border-left: 16px solid #283890
+        position: absolute
+        top: 50%
+        transform: translateY(-50%)
+        left: 100%
+        z-index: 2
+      &::after
+        z-index: 1
+        border-left-color: #fff
+        margin-left: 1px
