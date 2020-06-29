@@ -2,7 +2,7 @@ window.addEventListener('DOMContentLoaded', function () {
   LazyLoadFunction()
   navbarOffCanvas()
   headerSearch()
-  eventScrollUpScrollDown()
+  eventScrollBackToTop()
   sliderHighLightHome()
   eventClickHighLightHome()
   sliderJobHome()
@@ -76,16 +76,13 @@ function headerSearch() {
 }
 
 
-//#region scrollup - scrolldown event
-function eventScrollUpScrollDown() {
-  window.addEventListener('scroll', function () {
-    if (document.documentElement.scrollTop > 100) {
-      document.querySelector('.button_BackToTop').style.visibility = 'visible'
-      document.querySelector('.button_BackToTop').style.opacity = '1'
-    } else {
-      document.querySelector('.button_BackToTop').style.visibility = 'hidden'
-      document.querySelector('.button_BackToTop').style.opacity = '0'
-    }
+//#region back to top event
+function eventScrollBackToTop() {
+  $('.social_media__BackToTop').click(function (e) {
+    e.preventDefault()
+    $('html, body').animate({
+      scrollTop: 0
+    }, 1000)
   })
 }
 //#endregion
@@ -258,7 +255,6 @@ function sliderNewsHome() {
     },
   })
 }
-//#endregion
 
 function sliderViecLam() {
   new Swiper('.vl-company .swiper-container', {
@@ -272,5 +268,6 @@ function sliderViecLam() {
       el: '.vl-company .swiper-pagination',
       clickable: true
     },
-  });
+  })
 }
+//#endregion

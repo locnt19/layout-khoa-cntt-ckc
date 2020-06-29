@@ -19,16 +19,49 @@
     &__mobile
       height: 28px
     &__desktop
-      height: 48px
+      height: 36px
+      margin-bottom: 8px
+      @media screen and ( min-width: 1440px )
+        margin-bottom: 0
   &_navbar
     position: relative
+    display: flex
+    align-items: center
+    flex-wrap: wrap
     &__nav
-      // position: absolute
-      // left: 50%
-      // transform: translateX(-50%)
-      a
-        font-weight: 500
+      font-weight: 500
+      .nav-link
+        height: 100%
         color: #283890
+        &.active,
+        &:hover
+          color: #fff
+          background-image: linear-gradient(to top, #4481eb 0%, #04befe 100%)
+      .dropdown-toggle
+        padding-right: .5rem
+        &::after
+          content: '\F0140'
+          display: inline-block
+          font: normal normal normal 24px/1 'Material Design Icons'
+          font-size: inherit
+          text-rendering: auto
+          line-height: inherit
+          -webkit-font-smoothing: antialiased
+          -moz-osx-font-smoothing: grayscale
+          // reset css bootstrap
+          border: none
+          vertical-align: unset
+      .dropdown-menu
+        margin-top: 7px
+        border: 1px solid rgba(0,0,0,.1)
+        overflow: hidden
+      .dropdown-item
+        padding: .585rem 2rem
+        + .dropdown-item
+          border-top: 1px solid rgba(0,0,0,.1)
+        &:hover
+          color: #fff
+          background-image: linear-gradient(to top, #4481eb 0%, #04befe 100%)
   &_master
     background: #fff
     box-shadow: 0 .5rem .75rem rgba(#000,.1)
