@@ -11,19 +11,27 @@
 	<body>
 		<header class="header_master sticky-top">
 			<div class="header_desktop d-none d-lg-block px-3 py-2">
-				<nav class="header_navbar d-flex align-items-center text-uppercase"><a class="d-block" href="index.html"><img class="header_logo__desktop" src="img/logo/logo.jpg" alt="logo Cao Thắng"></a>
-					<nav class="nav header_navbar__nav">
-						<li class="nav-item"><a class="nav-link" href="index.html">Trang Chủ</a></li>
-						<li class="nav-item"><a class="nav-link" href="contact.html">Giới thiệu</a></li>
-						<li class="nav-item"><a class="nav-link" href="#">Sinh viên</a></li>
-						<li class="nav-item"><a class="nav-link" href="#">Thông báo</a></li>
-						<li class="nav-item"><a class="nav-link" href="vieclam.html">Việc làm</a></li>
+				<div class="container">
+					<nav class="header_navbar"><a class="d-block" href="index.html"><img class="header_logo__desktop" src="img/logo/logo.jpg" alt="logo Cao Thắng"></a>
+						<nav class="nav header_navbar__nav ml-auto">
+							<li class="nav-item"><a class="nav-link active text-uppercase" href="index.html">Trang Chủ</a></li>
+							<li class="nav-item dropdown"><a class="nav-link text-uppercase dropdown-toggle" href="#" role="button" data-toggle="dropdown">Giới thiệu</a>
+								<div class="dropdown-menu p-0 shadow"><a class="dropdown-item" href="#">Giới thiệu chung</a><a class="dropdown-item" href="#">Tầm nhìn - sứ mạng</a><a class="dropdown-item" href="#">Mục tiêu đào tạo</a><a class="dropdown-item" href="#">Ban chủ nhiệm Khoa</a><a class="dropdown-item" href="#">Các bộ phận & Hội đồng</a><a class="dropdown-item" href="#">Đội ngũ giáo viên</a><a class="dropdown-item" href="#">Liên hệ</a>
+									<div class="dropdown-header">Đào tạo</div><a class="dropdown-item" href="#">Chương trình học</a><a class="dropdown-item" href="#">CĐ tin học</a><a class="dropdown-item" href="#">CĐN quản trị mạng</a><a class="dropdown-item" href="#">CĐN SCLR máy tính</a>
+								</div>
+							</li>
+							<li class="nav-item"><a class="nav-link text-uppercase dropdown-toggle" href="#" role="button" data-toggle="dropdown">Thông báo</a>
+								<div class="dropdown-menu p-0 shadow"><a class="dropdown-item" href="#">Thông báo Trường</a><a class="dropdown-item" href="#">Thông báo CĐ Tin Học</a><a class="dropdown-item" href="#">Thông báo CĐ Nghề</a></div>
+							</li>
+							<li class="nav-item"><a class="nav-link text-uppercase dropdown-toggle" href="#" role="button" data-toggle="dropdown">Sinh viên</a>
+								<div class="dropdown-menu p-0 shadow"><a class="dropdown-item" href="#">Cựu sinh viên</a><a class="dropdown-item" href="#">Thời khóa biểu</a><a class="dropdown-item" href="#">E-Learning</a><a class="dropdown-item" href="#">Tài liệu học tập</a><a class="dropdown-item" href="#">Tra cứu</a><a class="dropdown-item" href="#">Mẫu đơn</a><a class="dropdown-item" href="#">Việc làm</a></div>
+							</li>
+							<li class="nav-item"><a class="nav-link text-uppercase dropdown-toggle" href="#" role="button" data-toggle="dropdown">Thành tích</a>
+								<div class="dropdown-menu p-0 shadow"><a class="dropdown-item" href="#">Hợp tác quốc tế</a><a class="dropdown-item" href="#">Công trình khoa học</a><a class="dropdown-item" href="#">Bảng vàng thành tích</a><a class="dropdown-item" href="#">Doanh nghiệp đồng hành</a></div>
+							</li>
+						</nav>
 					</nav>
-					<form class="header_search ml-auto">
-						<input class="header_search__input" type="text" placeholder="Hãy nhập gì đó...">
-						<button class="header_search__button" type="reset"></button>
-					</form>
-				</nav>
+				</div>
 			</div>
 			<div class="header_mobile d-lg-none"><a href="index.html"><img class="header_logo__mobile" src="img/logo/logo.jpg" alt="logo.jpg"></a><a class="offcanvas_button__open mdi mdi-menu" href="#" role="button"></a>
 				<div class="offcanvas offcanvas_overlay">
@@ -76,131 +84,62 @@
 			<div class="container mt-3 py-5 z-depth-1">
 				<div class="container">
 					<section class="dark-grey-text">
-						<h2 class="text-center font-weight-bold mb-4 pb-2">Recent posts</h2>
-						<p class="text-center mx-auto w-responsive mb-5">
-							Lorem ipsum dolor sit amet, consectetur adipisicing
-							elit. Fugit, error amet numquam iure provident voluptate esse quasi, veritatis totam voluptas
-							nostrum quisquam eum porro a pariatur veniam.
-						</p>
+						<h2 class="text-center font-weight-bold mb-4 pb-2">TIN TỨC</h2>
+						<p class="text-center mx-auto w-responsive mb-5">Thông báo chung cho Sinh viên Khoa Tin học. Mời các bạn theo dõi.</p>
 						<div class="row align-items-center mt-4">
 							<div class="col-lg-5 col-xl-4">
-								<div class="view overlay rounded z-depth-1-half mb-lg-0 mb-4"><img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Others/images/49.jpg" alt="Sample image"><a>
+								<div class="view overlay rounded z-depth-1-half mb-lg-0 mb-4"><img class="img-fluid" src="img/news/olympic.jpg" alt="image"><a>
 										<div class="mask rgba-white-slight"></div></a></div>
 							</div>
 							<div class="col-lg-7 col-xl-8">
-								<h4 class="font-weight-bold mb-3"><strong>Title of the news</strong></h4>
-								<p class="dark-grey-text">
-									Nam libero tempore, cum soluta nobis est eligendi optio cumque
-									nihil impedit
-									quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis
-									dolor repellendus
-									et aut officiis cum soluta nobis est eligendi placeat facere aut rerum.
-								</p>
-								<p>by <a class="font-weight-bold">Jessica Clark</a>, 19/04/2018</p><a class="btn btn-primary btn-md mx-0 btn-rounded">Read more</a>
+								<h4 class="font-weight-bold mb-3"><strong>Olympic Tin học Sinh viên</strong></h4>
+								<p class="dark-grey-text">Cuộc thi Olympic Tin học Sinh viên toàn quốc là một cuộc thi lớn ành cho các bạn sinh viên đam mê lập trình và thuật toán ở Việt Nam, là cơ hội để các bạn có thể được học hỏi, giao lưu và khẳng định khả năng của bản thân mình..</p>
+								<p>by <a class="font-weight-bold">Trần Quang Khải</a>, 29/06/2020</p><a class="btn btn-primary btn-md mx-0 btn-rounded">Xem chi tiết</a>
 							</div>
 						</div>
 						<div class="row align-items-center mt-4">
 							<div class="col-lg-5 col-xl-4">
-								<div class="view overlay rounded z-depth-1-half mb-lg-0 mb-4"><img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Others/images/49.jpg" alt="Sample image"><a>
+								<div class="view overlay rounded z-depth-1-half mb-lg-0 mb-4"><img class="img-fluid" src="img/news/bang-vang-thanh-tich-03.jpg" alt="image"><a>
 										<div class="mask rgba-white-slight"></div></a></div>
 							</div>
 							<div class="col-lg-7 col-xl-8">
-								<h4 class="font-weight-bold mb-3"><strong>Title of the news</strong></h4>
-								<p class="dark-grey-text">
-									Nam libero tempore, cum soluta nobis est eligendi optio cumque
-									nihil impedit
-									quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis
-									dolor repellendus
-									et aut officiis cum soluta nobis est eligendi placeat facere aut rerum.
-								</p>
-								<p>by <a class="font-weight-bold">Jessica Clark</a>, 19/04/2018</p><a class="btn btn-primary btn-md mx-0 btn-rounded">Read more</a>
+								<h4 class="font-weight-bold mb-3"><strong>[S4L] KẾT QUẢ SOLUTIONS FOR LIFE KỲ 03 TRANSLATING INTO PROTEIN</strong></h4>
+								<p class="dark-grey-textCLB">Tin học xin chúc mừng bạn Lê Hoàng Khang (CĐ TH 19C) và bạn Võ Bằng Kiều (CĐ TH 19D) đã có lời giải chính xác cho bài toán kỳ 03 Solutions For Life với chủ đề “Translating into Protein”.</p>
+								<p>by <a class="font-weight-bold">Trần Quang Khải</a>, 29/06/2020</p><a class="btn btn-primary btn-md mx-0 btn-rounded">Xem chi tiết</a>
 							</div>
 						</div>
 						<div class="row align-items-center mt-4">
 							<div class="col-lg-5 col-xl-4">
-								<div class="view overlay rounded z-depth-1-half mb-lg-0 mb-4"><img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Others/images/49.jpg" alt="Sample image"><a>
+								<div class="view overlay rounded z-depth-1-half mb-lg-0 mb-4"><img class="img-fluid" src="img/news/haemoglobin.png" alt="image"><a>
 										<div class="mask rgba-white-slight"></div></a></div>
 							</div>
 							<div class="col-lg-7 col-xl-8">
-								<h4 class="font-weight-bold mb-3"><strong>Title of the news</strong></h4>
-								<p class="dark-grey-text">
-									Nam libero tempore, cum soluta nobis est eligendi optio cumque
-									nihil impedit
-									quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis
-									dolor repellendus
-									et aut officiis cum soluta nobis est eligendi placeat facere aut rerum.
-								</p>
-								<p>by <a class="font-weight-bold">Jessica Clark</a>, 19/04/2018</p><a class="btn btn-primary btn-md mx-0 btn-rounded">Read more</a>
+								<h4 class="font-weight-bold mb-3"><strong>[Problem 03] Translating RNA into Protein</strong></h4>
+								<p class="dark-grey-text">Giống như các acid nucleic là một chuỗi polyme của nucleotides, protein cũng là một chuỗi các phân tử nhỏ hơn được gọi là amino acid; có hơn khoảng 20 amino acids phổ biến xuất hiện trong tất cả các loài. Cũng giống như cấu trúc chính của nucleic acid là sự sắp xếp các nucleotides cảu nó, cấu trúc chính của protein cũng là sự sắp xếp các amino acids. Một số protein được tổ hợp từ một vài chuỗi con gọi là polypeptides trong khi một số khác được hình thành từ một polypeptide duy nhất..</p>
+								<p>by <a class="font-weight-bold">Trần Quang Khải</a>, 29/06/2020</p><a class="btn btn-primary btn-md mx-0 btn-rounded">Xem chi tiết</a>
 							</div>
 						</div>
-						<div class="row align-items-center mt-4">
-							<div class="col-lg-5 col-xl-4">
-								<div class="view overlay rounded z-depth-1-half mb-lg-0 mb-4"><img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Others/images/49.jpg" alt="Sample image"><a>
-										<div class="mask rgba-white-slight"></div></a></div>
-							</div>
-							<div class="col-lg-7 col-xl-8">
-								<h4 class="font-weight-bold mb-3"><strong>Title of the news</strong></h4>
-								<p class="dark-grey-text">
-									Nam libero tempore, cum soluta nobis est eligendi optio cumque
-									nihil impedit
-									quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis
-									dolor repellendus
-									et aut officiis cum soluta nobis est eligendi placeat facere aut rerum.
-								</p>
-								<p>by <a class="font-weight-bold">Jessica Clark</a>, 19/04/2018</p><a class="btn btn-primary btn-md mx-0 btn-rounded">Read more</a>
-							</div>
-						</div>
-						<div class="row align-items-center mt-4">
-							<div class="col-lg-5 col-xl-4">
-								<div class="view overlay rounded z-depth-1-half mb-lg-0 mb-4"><img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Others/images/49.jpg" alt="Sample image"><a>
-										<div class="mask rgba-white-slight"></div></a></div>
-							</div>
-							<div class="col-lg-7 col-xl-8">
-								<h4 class="font-weight-bold mb-3"><strong>Title of the news</strong></h4>
-								<p class="dark-grey-text">
-									Nam libero tempore, cum soluta nobis est eligendi optio cumque
-									nihil impedit
-									quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis
-									dolor repellendus
-									et aut officiis cum soluta nobis est eligendi placeat facere aut rerum.
-								</p>
-								<p>by <a class="font-weight-bold">Jessica Clark</a>, 19/04/2018</p><a class="btn btn-primary btn-md mx-0 btn-rounded">Read more</a>
-							</div>
-						</div>
-						<div class="row align-items-center mt-4">
-							<div class="col-lg-5 col-xl-4">
-								<div class="view overlay rounded z-depth-1-half mb-lg-0 mb-4"><img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Others/images/49.jpg" alt="Sample image"><a>
-										<div class="mask rgba-white-slight"></div></a></div>
-							</div>
-							<div class="col-lg-7 col-xl-8">
-								<h4 class="font-weight-bold mb-3"><strong>Title of the news</strong></h4>
-								<p class="dark-grey-text">
-									Nam libero tempore, cum soluta nobis est eligendi optio cumque
-									nihil impedit
-									quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis
-									dolor repellendus
-									et aut officiis cum soluta nobis est eligendi placeat facere aut rerum.
-								</p>
-								<p>by <a class="font-weight-bold">Jessica Clark</a>, 19/04/2018</p><a class="btn btn-primary btn-md mx-0 btn-rounded">Read more</a>
-							</div>
-						</div>
-						<hr class="my-5">
-					</section>
-					<nav aria-label="Page navigation example">
-						<ul class="pagination pagination-circle pg-blue">
-							<li class="page-item disabled"><a class="page-link">First</a></li>
-							<li class="page-item disabled"><a class="page-link" aria-label="Previous"><span aria-hidden="true">«</span><span class="sr-only">Previous</span></a></li>
+						<hr class="my-4">
+						<ul class="pagination pagination-circle pg-blue mb-0 justify-content-center">
+							<li class="page-item disabled"><a class="page-link">Đầu tiên</a></li>
+							<li class="page-item disabled"><a class="page-link"><span>«</span></a></li>
 							<li class="page-item active"><a class="page-link">1</a></li>
 							<li class="page-item"><a class="page-link">2</a></li>
 							<li class="page-item"><a class="page-link">3</a></li>
-							<li class="page-item"><a class="page-link">4</a></li>
-							<li class="page-item"><a class="page-link">5</a></li>
-							<li class="page-item"><a class="page-link" aria-label="Next"><span aria-hidden="true">»</span><span class="sr-only">Next</span></a></li>
-							<li class="page-item"><a class="page-link">Last</a></li>
+							<li class="page-item"><a class="page-link"><span>»</span></a></li>
+							<li class="page-item"><a class="page-link">Cuối cùng</a></li>
 						</ul>
-					</nav>
+					</section>
 				</div>
 			</div>
+			<section class="social_media__wrapper shadow"><a class="social_media__facebook fab fa-facebook-f bg_gradient_facebook" href="#"></a><a class="social_media__youtube fab fa-youtube" href="#"></a>
+				<div class="social_media__search bg_gradient_3">
+					<form class="header_search">
+						<input class="header_search__input" type="text" placeholder="Nhập keyword...">
+						<button class="header_search__button" type="reset"></button>
+					</form>
+				</div><a class="social_media__BackToTop mdi mdi-chevron-up bg_gradient_1" href="#"></a>
+			</section>
 		</main>
 		<footer class="footer mt-5">
 			<div class="container footer-bs pt-5">

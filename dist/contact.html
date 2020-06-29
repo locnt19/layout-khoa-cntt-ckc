@@ -11,19 +11,27 @@
 	<body>
 		<header class="header_master sticky-top">
 			<div class="header_desktop d-none d-lg-block px-3 py-2">
-				<nav class="header_navbar d-flex align-items-center text-uppercase"><a class="d-block" href="index.html"><img class="header_logo__desktop" src="img/logo/logo.jpg" alt="logo Cao Thắng"></a>
-					<nav class="nav header_navbar__nav">
-						<li class="nav-item"><a class="nav-link" href="index.html">Trang Chủ</a></li>
-						<li class="nav-item"><a class="nav-link" href="contact.html">Giới thiệu</a></li>
-						<li class="nav-item"><a class="nav-link" href="#">Sinh viên</a></li>
-						<li class="nav-item"><a class="nav-link" href="#">Thông báo</a></li>
-						<li class="nav-item"><a class="nav-link" href="vieclam.html">Việc làm</a></li>
+				<div class="container">
+					<nav class="header_navbar"><a class="d-block" href="index.html"><img class="header_logo__desktop" src="img/logo/logo.jpg" alt="logo Cao Thắng"></a>
+						<nav class="nav header_navbar__nav ml-auto">
+							<li class="nav-item"><a class="nav-link active text-uppercase" href="index.html">Trang Chủ</a></li>
+							<li class="nav-item dropdown"><a class="nav-link text-uppercase dropdown-toggle" href="#" role="button" data-toggle="dropdown">Giới thiệu</a>
+								<div class="dropdown-menu p-0 shadow"><a class="dropdown-item" href="#">Giới thiệu chung</a><a class="dropdown-item" href="#">Tầm nhìn - sứ mạng</a><a class="dropdown-item" href="#">Mục tiêu đào tạo</a><a class="dropdown-item" href="#">Ban chủ nhiệm Khoa</a><a class="dropdown-item" href="#">Các bộ phận & Hội đồng</a><a class="dropdown-item" href="#">Đội ngũ giáo viên</a><a class="dropdown-item" href="#">Liên hệ</a>
+									<div class="dropdown-header">Đào tạo</div><a class="dropdown-item" href="#">Chương trình học</a><a class="dropdown-item" href="#">CĐ tin học</a><a class="dropdown-item" href="#">CĐN quản trị mạng</a><a class="dropdown-item" href="#">CĐN SCLR máy tính</a>
+								</div>
+							</li>
+							<li class="nav-item"><a class="nav-link text-uppercase dropdown-toggle" href="#" role="button" data-toggle="dropdown">Thông báo</a>
+								<div class="dropdown-menu p-0 shadow"><a class="dropdown-item" href="#">Thông báo Trường</a><a class="dropdown-item" href="#">Thông báo CĐ Tin Học</a><a class="dropdown-item" href="#">Thông báo CĐ Nghề</a></div>
+							</li>
+							<li class="nav-item"><a class="nav-link text-uppercase dropdown-toggle" href="#" role="button" data-toggle="dropdown">Sinh viên</a>
+								<div class="dropdown-menu p-0 shadow"><a class="dropdown-item" href="#">Cựu sinh viên</a><a class="dropdown-item" href="#">Thời khóa biểu</a><a class="dropdown-item" href="#">E-Learning</a><a class="dropdown-item" href="#">Tài liệu học tập</a><a class="dropdown-item" href="#">Tra cứu</a><a class="dropdown-item" href="#">Mẫu đơn</a><a class="dropdown-item" href="#">Việc làm</a></div>
+							</li>
+							<li class="nav-item"><a class="nav-link text-uppercase dropdown-toggle" href="#" role="button" data-toggle="dropdown">Thành tích</a>
+								<div class="dropdown-menu p-0 shadow"><a class="dropdown-item" href="#">Hợp tác quốc tế</a><a class="dropdown-item" href="#">Công trình khoa học</a><a class="dropdown-item" href="#">Bảng vàng thành tích</a><a class="dropdown-item" href="#">Doanh nghiệp đồng hành</a></div>
+							</li>
+						</nav>
 					</nav>
-					<form class="header_search ml-auto">
-						<input class="header_search__input" type="text" placeholder="Hãy nhập gì đó...">
-						<button class="header_search__button" type="reset"></button>
-					</form>
-				</nav>
+				</div>
 			</div>
 			<div class="header_mobile d-lg-none"><a href="index.html"><img class="header_logo__mobile" src="img/logo/logo.jpg" alt="logo.jpg"></a><a class="offcanvas_button__open mdi mdi-menu" href="#" role="button"></a>
 				<div class="offcanvas offcanvas_overlay">
@@ -123,6 +131,14 @@
 						</div>
 					</div>
 				</div>
+			</section>
+			<section class="social_media__wrapper shadow"><a class="social_media__facebook fab fa-facebook-f bg_gradient_facebook" href="#"></a><a class="social_media__youtube fab fa-youtube" href="#"></a>
+				<div class="social_media__search bg_gradient_3">
+					<form class="header_search">
+						<input class="header_search__input" type="text" placeholder="Nhập keyword...">
+						<button class="header_search__button" type="reset"></button>
+					</form>
+				</div><a class="social_media__BackToTop mdi mdi-chevron-up bg_gradient_1" href="#"></a>
 			</section>
 		</main>
 		<footer class="footer mt-5">
