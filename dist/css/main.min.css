@@ -3,6 +3,18 @@ body {
   font-size: 1rem;
   font-weight: 400; }
 
+@media screen and (min-width: 576px) {
+  .container-fluid {
+    width: calc( 100% - 4rem); } }
+
+@media screen and (min-width: 768px) {
+  .container-fluid {
+    width: calc( 100% - 8rem); } }
+
+@media screen and (min-width: 992px) {
+  .container-fluid {
+    width: calc( 100% - 12rem); } }
+
 .bg_gradient_1 {
   background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%); }
 

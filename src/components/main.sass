@@ -3,6 +3,14 @@ body
   font-weight: 400
   font-size: 1rem
 
+.container-fluid
+  @media screen and ( min-width: 576px )
+    width: calc( 100% - 4rem )
+  @media screen and ( min-width: 768px )
+    width: calc( 100% - 8rem )
+  @media screen and ( min-width: 992px )
+    width: calc( 100% - 12rem )
+
 .bg_gradient
   &_1
     background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%)
