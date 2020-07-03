@@ -4,46 +4,47 @@ block var
   -var title = 'Liên hệ'
 
 block main
-  //- include ../components/banner-home/banner-home.pug
-  include ../components/breadcrumb/breadcrumb.pug
-  section.contact_page.mt-3
-    .container-fluid
-      .card.shadow.p-5
-        .row
-          .col-12
-            .contact_page__map
-              iframe(src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.51408493155!2d106.69916691555355!3d10.771882492324629!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f40a3b49e59%3A0xa1bd14e483a602db!2sCao%20Thang%20Technical%20College!5e0!3m2!1sen!2s!4v1592965759968!5m2!1sen!2s' width='600' height='450' frameborder='0' style='border:0;' allowfullscreen='' aria-hidden='false' tabindex='0')
-            .h3.text-uppercase.text-center.font-weight-bold.mt-4.mb-0 Liên hệ
-          .col-lg-5.mt-4
-            p.text-muted Bạn có niềm đam mê lập trình? Bạn muốn được trui rèn và thử thách bản thân trong môi trường teamwork? Hãy đến với chúng tôi!
-            .d-flex.text-muted
-              span.mdi.mdi-map-marker.mr-2
-              span Phòng F7.5, toàn nhà F, 65 Huỳnh Thúc Kháng, Q.1, TP.HCM
-            .d-flex.text-muted
-              span.mdi.mdi-email.mr-2
-              span cntt@caothang.edu.vn
-            .d-flex.text-muted
-              span.mdi.mdi-phone.mr-2
-              span +08.38212360 (ext-14)
-          .col-lg-7.mt-lg-4
-            form.row
-              .col-md-6
-                .md-form.mb-0
-                  input#form-first-name.form-control(type='text')
-                  label(for='form-first-name') Họ tên
-              .col-md-6
-                .md-form.mb-0
-                  input#form-email.form-control(type='email')
-                  label(for='form-email') Email
-              .col-12
-                .md-form.mb-0
-                  input#form-subject.form-control(type='text')
-                  label(for='form-subject') Tiêu đề email
-              .col-12
-                .md-form.mb-0
-                  textarea#form-message.md-textarea.form-control(rows='3')
-                  label(for='form-message') Nội dung email
-              .col-12
-                button.btn.btn-primary.shadow.py-2.ml-0(type='reset')
-                  span.mr-2 gửi
-                  i.far.fa-paper-plane
+  .bg__caothang__light
+    .pt-4
+      include ../components/breadcrumb/breadcrumb.pug
+    section.contact_page.mt-4
+      .container-fluid.bg-white.shadow.rounded-lg
+        .container-md.py-5
+          .row
+            .col-12
+              .contact_page__map
+                iframe(src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.51408493155!2d106.69916691555355!3d10.771882492324629!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f40a3b49e59%3A0xa1bd14e483a602db!2sCao%20Thang%20Technical%20College!5e0!3m2!1sen!2s!4v1592965759968!5m2!1sen!2s' width='600' height='450' frameborder='0' style='border:0;' allowfullscreen='' aria-hidden='false' tabindex='0')
+              .h3.text-uppercase.text-center.font-weight-bold.mt-4.mb-0 Liên hệ
+            .col-lg-5.mt-4
+              p.text-muted Bạn có niềm đam mê lập trình? Bạn muốn được trui rèn và thử thách bản thân trong môi trường teamwork? Hãy đến với chúng tôi!
+              .d-flex.text-muted
+                span.mdi.mdi-map-marker.mr-2
+                span Phòng F7.5, toà nhà F, 65 Huỳnh Thúc Kháng, Q.1, TP.HCM
+              .d-flex.text-muted
+                span.mdi.mdi-email.mr-2
+                span cntt@caothang.edu.vn
+              .d-flex.text-muted
+                span.mdi.mdi-phone.mr-2
+                span +08.38212360 (ext-14)
+            .col-lg-7.mt-lg-4
+              form.row
+                .col-md-6
+                  .form-group
+                    label(for='form-first-name') Họ tên
+                    input#form-first-name.form-control(type='text')
+                .col-md-6
+                  .form-group
+                    label(for='form-email') Email
+                    input#form-email.form-control(type='email')
+                .col-12
+                  .form-group
+                    label(for='form-subject') Tiêu đề email
+                    input#form-subject.form-control(type='text')
+                .col-12
+                  .form-group
+                    label(for='form-message') Nội dung
+                    textarea#form-message.md-textarea.form-control(rows='3')
+                .col-12
+                  button.btn.btn-primary.shadow.py-2.px-5.ml-0(type='reset')
+                    span.mr-2 GỬI
+                    span.mdi.mdi-near-me
