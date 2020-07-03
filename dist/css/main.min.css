@@ -625,9 +625,12 @@ body {
 
 .feature_home__icon {
   font-size: 20px; }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 992px) {
     .feature_home__icon {
-      font-size: 28px; } }
+      font-size: 32px; } }
+  @media screen and (min-width: 1200px) {
+    .feature_home__icon {
+      font-size: 48px; } }
 
 .feature_home__text {
   font-size: 12px; }
