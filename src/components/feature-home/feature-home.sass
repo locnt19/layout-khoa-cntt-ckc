@@ -1,17 +1,41 @@
 .feature_home
   &__item
+    &:first-of-type
+      .feature_home__box
+        background: darken(#fab1a0, 20)
+    &:nth-of-type(2)
+      .feature_home__box
+        background: darken(#00cec9, 20)
+    &:nth-of-type(3)
+      .feature_home__box
+        background: darken(#e17055, 20)
+    &:nth-of-type(4)
+      .feature_home__box
+        background: darken(#0984e3, 20)
+    &:nth-of-type(5)
+      .feature_home__box
+        background: darken(#81ecec, 20)
+    &:nth-of-type(6)
+      .feature_home__box
+        background: darken(#ff7675, 20)
+    &:nth-of-type(7)
+      .feature_home__box
+        background: darken(#74b9ff, 20)
+    &:last-of-type
+      .feature_home__box
+        background: darken(#d63031, 20)
     @media screen and ( max-width: 575.98px )
       &:nth-of-type(odd)
         padding-right: calc( 15px / 2 )
       &:nth-of-type(even)
         padding-left: calc( 15px / 2 )
   &__box
-    opacity: 0.8
+    opacity: 1
     border-radius: .5rem
     box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)
     &:hover
-      opacity: 1
-      box-shadow: 0 .5rem 1rem rgba(0,0,0,.1)
+      // opacity: .8
+      box-shadow: 0 0 1rem 0 rgba(0,0,0,.2)
   &__icon
     font-size: 20px
     @media screen and ( min-width: 768px )

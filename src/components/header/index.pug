@@ -1,75 +1,53 @@
 header.header_master.sticky-top
-  .header_desktop.d-none.d-lg-block.px-3.py-2
-    .container-fluid
-      nav.header_navbar
-        a(href='index.html').d-block
-          img.header_logo__desktop(src='img/logo/logo.jpg' alt='logo Cao Thắng')
-        nav.nav.header_navbar__nav.ml-auto
-          li.nav-item
-            a(href='index.html').nav-link.active.text-uppercase Trang Chủ
-          li.nav-item.dropdown
-            a(href='#' role='button' data-toggle='dropdown').nav-link.text-uppercase.dropdown-toggle Giới thiệu
-            .dropdown-menu.p-0.shadow
-              a(href='#').dropdown-item Giới thiệu chung
-              a(href='#').dropdown-item Tầm nhìn - sứ mạng
-              a(href='#').dropdown-item Mục tiêu đào tạo
-              a(href='#').dropdown-item Ban chủ nhiệm Khoa
-              a(href='#').dropdown-item Các bộ phận & Hội đồng
-              a(href='#').dropdown-item Đội ngũ giáo viên
-              a(href='#').dropdown-item Liên hệ
-              .dropdown-header Đào tạo
-              a(href='#').dropdown-item Chương trình học
-              a(href='#').dropdown-item CĐ tin học
-              a(href='#').dropdown-item CĐN quản trị mạng
-              a(href='#').dropdown-item CĐN SCLR máy tính
-              
-          li.nav-item
-            a(href='#' role='button' data-toggle='dropdown').nav-link.text-uppercase.dropdown-toggle Thông báo
-            .dropdown-menu.p-0.shadow
-              a(href='#').dropdown-item Thông báo Trường
-              a(href='#').dropdown-item Thông báo CĐ Tin Học
-              a(href='#').dropdown-item Thông báo CĐ Nghề
-          //- li.nav-item
-            a(href='#' role='button' data-toggle='dropdown').nav-link.text-uppercase.dropdown-toggle Tuyển sinh
-            .dropdown-menu.p-0.shadow
-              a(href='#').dropdown-item Thông báo tuyển sinh
-              a(href='#').dropdown-item Điểm chuẩn hằng năm
-              a(href='#').dropdown-item Tư vấn tuyển sinh
-          //- li.nav-item
-            a(href='#' role='button' data-toggle='dropdown').nav-link.text-uppercase.dropdown-toggle Đào tạo
-            .dropdown-menu.p-0.shadow
-              a(href='#').dropdown-item Chương trình học
-              a(href='#').dropdown-item CĐ tin học
-              a(href='#').dropdown-item CĐN quản trị mạng
-              a(href='#').dropdown-item CĐN SCLR máy tính
-          li.nav-item
-            a(href='#' role='button' data-toggle='dropdown').nav-link.text-uppercase.dropdown-toggle Sinh viên
-            .dropdown-menu.p-0.shadow
-              a(href='#').dropdown-item Cựu sinh viên
-              a(href='#').dropdown-item Thời khóa biểu
-              a(href='#').dropdown-item E-Learning
-              a(href='#').dropdown-item Tài liệu học tập
-              a(href='#').dropdown-item Tra cứu
-              a(href='#').dropdown-item Mẫu đơn
-              a(href='#').dropdown-item Việc làm
-          li.nav-item
-            a(href='#' role='button' data-toggle='dropdown').nav-link.text-uppercase.dropdown-toggle Thành tích
-            .dropdown-menu.p-0.shadow
-              a(href='#').dropdown-item Hợp tác quốc tế
-              a(href='#').dropdown-item Công trình khoa học
-              a(href='#').dropdown-item Bảng vàng thành tích
-              a(href='#').dropdown-item Doanh nghiệp đồng hành
-          //- li.nav-item
-            a(href='vieclam.html').nav-link.text-uppercase Việc làm
-        //- form.header_search.ml-auto
-          input.header_search__input(type='text' placeholder='Hãy nhập gì đó...')
-          button.header_search__button(type='reset')
-
-  //- .header_mobile
-  .header_mobile.d-lg-none
+  .header_desktop.bg__caothang.d-none.d-lg-block
+    nav.header_navbar
+      a(href='index.html').d-block.ml-3
+        img.header_logo__desktop(src='img/logo/logo.jpg' alt='logo Cao Thắng')
+      nav.nav.header_navbar__nav.ml-auto
+        .header_navbar__nav__item.text-decoration-none
+          span.header_navbar__nav__icon.mdi.mdi-home-outline
+          div Trang chủ
+        .header_navbar__nav__item.header_dropdown.text-decoration-none
+          span.header_navbar__nav__icon.mdi.mdi-information-outline
+          div Giới thiệu
+          .header_dropdown__menu.shadow
+            a(href='#').header_dropdown__item Giới thiệu chung
+            a(href='#').header_dropdown__item Tầm nhìn - sứ mạng
+            a(href='#').header_dropdown__item Mục tiêu đào tạo
+            a(href='#').header_dropdown__item Ban chủ nhiệm Khoa
+            a(href='#').header_dropdown__item Các bộ phận & Hội đồng
+            a(href='#').header_dropdown__item Đội ngũ giáo viên
+            a(href='#').header_dropdown__item Liên hệ
+        .header_navbar__nav__item.header_dropdown.text-decoration-none
+          span.header_navbar__nav__icon.mdi.mdi-bell-circle-outline
+          div Thông báo
+          .header_dropdown__menu.shadow
+            a(href='#').header_dropdown__item Thông báo Trường
+            a(href='#').header_dropdown__item Thông báo CĐ Tin Học
+            a(href='#').header_dropdown__item Thông báo CĐ Nghề
+        .header_navbar__nav__item.header_dropdown.text-decoration-none
+          span.header_navbar__nav__icon.mdi.mdi-school-outline
+          div Sinh viên
+          .header_dropdown__menu.shadow
+            a(href='#').header_dropdown__item Cựu sinh viên
+            a(href='#').header_dropdown__item Thời khóa biểu
+            a(href='#').header_dropdown__item E-Learning
+            a(href='#').header_dropdown__item Tài liệu học tập
+            a(href='#').header_dropdown__item Tra cứu
+            a(href='#').header_dropdown__item Mẫu đơn
+            a(href='#').header_dropdown__item Việc làm
+        .header_navbar__nav__item.header_dropdown.text-decoration-none
+          span.header_navbar__nav__icon.mdi.mdi-medal-outline
+          div Hợp tác & nghiên cứu
+          .header_dropdown__menu.shadow
+            a(href='#').header_dropdown__item Hợp tác quốc tế
+            a(href='#').header_dropdown__item Công trình khoa học
+            a(href='#').header_dropdown__item Bảng vàng thành tích
+            a(href='#').header_dropdown__item Doanh nghiệp đồng hành
+  .header_mobile.bg__caothang.d-lg-none
     a(href='index.html')
       img.header_logo__mobile(src='img/logo/logo.jpg' alt='logo.jpg')
-    a(href='#' role='button').offcanvas_button__open.mdi.mdi-menu
+    a(href='#' role='button').offcanvas_button__open.mdi.mdi-menu.text-white
     .offcanvas.offcanvas_overlay
       .offcanvas_bar
         .offcanvas_header
@@ -78,20 +56,79 @@ header.header_master.sticky-top
         ul.offcanvas_nav
           li.offcanvas_nav__item
             a(href='index.html').offcanvas_nav__link
-              span.offcanvas_icons.mdi.mdi-home
+              span.offcanvas_icons.mdi.mdi-home-outline
               span.text Trang chủ
           li.offcanvas_nav__item
             a(href='#').offcanvas_nav__link
               span.offcanvas_icons.mdi.mdi-information-outline
               span.text Giới thiệu
+            ul.offcanvas_nav__sub
+              li.offcanvas_nav__item
+                a(href='#').offcanvas_nav__link
+                  span.offcanvas_icons.lnr.lnr-chevron-right
+                  span.text Giới thiệu chung
+              li.offcanvas_nav__item
+                a(href='#').offcanvas_nav__link
+                  span.offcanvas_icons.lnr.lnr-chevron-right
+                  span.text Tầm nhìn - sứ mạng
+              li.offcanvas_nav__item
+                a(href='#').offcanvas_nav__link
+                  span.offcanvas_icons.lnr.lnr-chevron-right
+                  span.text Mục tiêu đào tạo
+              li.offcanvas_nav__item
+                a(href='#').offcanvas_nav__link
+                  span.offcanvas_icons.lnr.lnr-chevron-right
+                  span.text Ban chủ nhiệm Khoa
+              li.offcanvas_nav__item
+                a(href='#').offcanvas_nav__link
+                  span.offcanvas_icons.lnr.lnr-chevron-right
+                  span.text Các bộ phận & Hội đồng
+              li.offcanvas_nav__item
+                a(href='#').offcanvas_nav__link
+                  span.offcanvas_icons.lnr.lnr-chevron-right
+                  span.text Đội ngũ giáo viên
+              li.offcanvas_nav__item
+                a(href='#').offcanvas_nav__link
+                  span.offcanvas_icons.lnr.lnr-chevron-right
+                  span.text Liên hệ
           li.offcanvas_nav__item
             a(href='#').offcanvas_nav__link
-              span.offcanvas_icons.mdi.mdi-alarm-light
+              span.offcanvas_icons.mdi.mdi-bell-circle-outline
               span.text Thông báo
+            ul.offcanvas_nav__sub
+              li.offcanvas_nav__item
+                a(href='#').offcanvas_nav__link
+                  span.offcanvas_icons.lnr.lnr-chevron-right
+                  span.text Thông báo Trường
+              li.offcanvas_nav__item
+                a(href='#').offcanvas_nav__link
+                  span.offcanvas_icons.lnr.lnr-chevron-right
+                  span.text Thông báo CĐ Tin Học
+              li.offcanvas_nav__item
+                a(href='#').offcanvas_nav__link
+                  span.offcanvas_icons.lnr.lnr-chevron-right
+                  span.text Thông báo CĐ Nghề
           li.offcanvas_nav__item
-            a(href='contact.html').offcanvas_nav__link
-              span.offcanvas_icons.mdi.mdi-phone
-              span.text Liên hệ
+            a(href='#').offcanvas_nav__link
+              span.offcanvas_icons.mdi.mdi-medal-outline
+              span.text Hợp tác & nghiên cứu
+            ul.offcanvas_nav__sub
+              li.offcanvas_nav__item
+                a(href='#').offcanvas_nav__link
+                  span.offcanvas_icons.lnr.lnr-chevron-right
+                  span.text Hợp tác quốc tế
+              li.offcanvas_nav__item
+                a(href='#').offcanvas_nav__link
+                  span.offcanvas_icons.lnr.lnr-chevron-right
+                  span.text Công trình khoa học
+              li.offcanvas_nav__item
+                a(href='#').offcanvas_nav__link
+                  span.offcanvas_icons.lnr.lnr-chevron-right
+                  span.text Bảng vàng thành tích
+              li.offcanvas_nav__item
+                a(href='#').offcanvas_nav__link
+                  span.offcanvas_icons.lnr.lnr-chevron-right
+                  span.text Doanh nghiệp đồng hành
           li.offcanvas_nav__divider
           li.offcanvas_nav__item
             a(href='#').offcanvas_nav__link
@@ -117,15 +154,6 @@ header.header_master.sticky-top
             a(href='#').offcanvas_nav__link
               span.offcanvas_icons.mdi.mdi-school
               span.text Cựu Sinh viên
-            ul.offcanvas_nav__sub
-              li.offcanvas_nav__item
-                a(href='#').offcanvas_nav__link
-                  span.offcanvas_icons.mdi.mdi-home-outline
-                  span.text Nav sub 1
-              li.offcanvas_nav__item
-                a(href='#').offcanvas_nav__link
-                  span.offcanvas_icons.mdi.mdi-information-outline
-                  span.text Nav sub 2
           li.offcanvas_nav__item
             a(href='#').offcanvas_nav__link
               span.offcanvas_icons.mdi.mdi-folder-account

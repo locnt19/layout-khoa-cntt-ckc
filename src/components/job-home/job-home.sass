@@ -1,7 +1,10 @@
 .job_home
+  &__wrapper
+    hr
+      opacity: 1
+      border-top: 1px solid #fff
   &__title
     hr
-      z-index: -1
       position: absolute
       top: 50%
       left: 0
@@ -10,6 +13,8 @@
   &__sub_title
     font-weight: 700
   &__desc
+    z-index: 1
+    position: relative
     @media screen and ( min-width: 992px )
       font-size: 1.25em
     &__title

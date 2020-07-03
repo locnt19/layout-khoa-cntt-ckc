@@ -10,50 +10,70 @@
 	</head>
 	<body>
 		<header class="header_master sticky-top">
-			<div class="header_desktop d-none d-lg-block px-3 py-2">
-				<div class="container-fluid">
-					<nav class="header_navbar"><a class="d-block" href="index.html"><img class="header_logo__desktop" src="img/logo/logo.jpg" alt="logo Cao Thắng"></a>
-						<nav class="nav header_navbar__nav ml-auto">
-							<li class="nav-item"><a class="nav-link active text-uppercase" href="index.html">Trang Chủ</a></li>
-							<li class="nav-item dropdown"><a class="nav-link text-uppercase dropdown-toggle" href="#" role="button" data-toggle="dropdown">Giới thiệu</a>
-								<div class="dropdown-menu p-0 shadow"><a class="dropdown-item" href="#">Giới thiệu chung</a><a class="dropdown-item" href="#">Tầm nhìn - sứ mạng</a><a class="dropdown-item" href="#">Mục tiêu đào tạo</a><a class="dropdown-item" href="#">Ban chủ nhiệm Khoa</a><a class="dropdown-item" href="#">Các bộ phận & Hội đồng</a><a class="dropdown-item" href="#">Đội ngũ giáo viên</a><a class="dropdown-item" href="#">Liên hệ</a>
-									<div class="dropdown-header">Đào tạo</div><a class="dropdown-item" href="#">Chương trình học</a><a class="dropdown-item" href="#">CĐ tin học</a><a class="dropdown-item" href="#">CĐN quản trị mạng</a><a class="dropdown-item" href="#">CĐN SCLR máy tính</a>
-								</div>
-							</li>
-							<li class="nav-item"><a class="nav-link text-uppercase dropdown-toggle" href="#" role="button" data-toggle="dropdown">Thông báo</a>
-								<div class="dropdown-menu p-0 shadow"><a class="dropdown-item" href="#">Thông báo Trường</a><a class="dropdown-item" href="#">Thông báo CĐ Tin Học</a><a class="dropdown-item" href="#">Thông báo CĐ Nghề</a></div>
-							</li>
-							<li class="nav-item"><a class="nav-link text-uppercase dropdown-toggle" href="#" role="button" data-toggle="dropdown">Sinh viên</a>
-								<div class="dropdown-menu p-0 shadow"><a class="dropdown-item" href="#">Cựu sinh viên</a><a class="dropdown-item" href="#">Thời khóa biểu</a><a class="dropdown-item" href="#">E-Learning</a><a class="dropdown-item" href="#">Tài liệu học tập</a><a class="dropdown-item" href="#">Tra cứu</a><a class="dropdown-item" href="#">Mẫu đơn</a><a class="dropdown-item" href="#">Việc làm</a></div>
-							</li>
-							<li class="nav-item"><a class="nav-link text-uppercase dropdown-toggle" href="#" role="button" data-toggle="dropdown">Thành tích</a>
-								<div class="dropdown-menu p-0 shadow"><a class="dropdown-item" href="#">Hợp tác quốc tế</a><a class="dropdown-item" href="#">Công trình khoa học</a><a class="dropdown-item" href="#">Bảng vàng thành tích</a><a class="dropdown-item" href="#">Doanh nghiệp đồng hành</a></div>
-							</li>
-						</nav>
+			<div class="header_desktop bg__caothang d-none d-lg-block">
+				<nav class="header_navbar"><a class="d-block ml-3" href="index.html"><img class="header_logo__desktop" src="img/logo/logo.jpg" alt="logo Cao Thắng"></a>
+					<nav class="nav header_navbar__nav ml-auto">
+						<div class="header_navbar__nav__item text-decoration-none"><span class="header_navbar__nav__icon mdi mdi-home-outline"></span>
+							<div>Trang chủ</div>
+						</div>
+						<div class="header_navbar__nav__item header_dropdown text-decoration-none"><span class="header_navbar__nav__icon mdi mdi-information-outline"></span>
+							<div>Giới thiệu</div>
+							<div class="header_dropdown__menu shadow"><a class="header_dropdown__item" href="#">Giới thiệu chung</a><a class="header_dropdown__item" href="#">Tầm nhìn - sứ mạng</a><a class="header_dropdown__item" href="#">Mục tiêu đào tạo</a><a class="header_dropdown__item" href="#">Ban chủ nhiệm Khoa</a><a class="header_dropdown__item" href="#">Các bộ phận & Hội đồng</a><a class="header_dropdown__item" href="#">Đội ngũ giáo viên</a><a class="header_dropdown__item" href="#">Liên hệ</a></div>
+						</div>
+						<div class="header_navbar__nav__item header_dropdown text-decoration-none"><span class="header_navbar__nav__icon mdi mdi-bell-circle-outline"></span>
+							<div>Thông báo</div>
+							<div class="header_dropdown__menu shadow"><a class="header_dropdown__item" href="#">Thông báo Trường</a><a class="header_dropdown__item" href="#">Thông báo CĐ Tin Học</a><a class="header_dropdown__item" href="#">Thông báo CĐ Nghề</a></div>
+						</div>
+						<div class="header_navbar__nav__item header_dropdown text-decoration-none"><span class="header_navbar__nav__icon mdi mdi-school-outline"></span>
+							<div>Sinh viên</div>
+							<div class="header_dropdown__menu shadow"><a class="header_dropdown__item" href="#">Cựu sinh viên</a><a class="header_dropdown__item" href="#">Thời khóa biểu</a><a class="header_dropdown__item" href="#">E-Learning</a><a class="header_dropdown__item" href="#">Tài liệu học tập</a><a class="header_dropdown__item" href="#">Tra cứu</a><a class="header_dropdown__item" href="#">Mẫu đơn</a><a class="header_dropdown__item" href="#">Việc làm</a></div>
+						</div>
+						<div class="header_navbar__nav__item header_dropdown text-decoration-none"><span class="header_navbar__nav__icon mdi mdi-medal-outline"></span>
+							<div>Hợp tác & nghiên cứu</div>
+							<div class="header_dropdown__menu shadow"><a class="header_dropdown__item" href="#">Hợp tác quốc tế</a><a class="header_dropdown__item" href="#">Công trình khoa học</a><a class="header_dropdown__item" href="#">Bảng vàng thành tích</a><a class="header_dropdown__item" href="#">Doanh nghiệp đồng hành</a></div>
+						</div>
 					</nav>
-				</div>
+				</nav>
 			</div>
-			<div class="header_mobile d-lg-none"><a href="index.html"><img class="header_logo__mobile" src="img/logo/logo.jpg" alt="logo.jpg"></a><a class="offcanvas_button__open mdi mdi-menu" href="#" role="button"></a>
+			<div class="header_mobile bg__caothang d-lg-none"><a href="index.html"><img class="header_logo__mobile" src="img/logo/logo.jpg" alt="logo.jpg"></a><a class="offcanvas_button__open mdi mdi-menu text-white" href="#" role="button"></a>
 				<div class="offcanvas offcanvas_overlay">
 					<div class="offcanvas_bar">
 						<div class="offcanvas_header"><a href="index.html"><img class="lazy offcanvas_header__logo" data-src="img/logo/logo.jpg" alt="logo.jpg"></a></div>
 						<ul class="offcanvas_nav">
-							<li class="offcanvas_nav__item"><a class="offcanvas_nav__link" href="index.html"><span class="offcanvas_icons mdi mdi-home"></span><span class="text">Trang chủ</span></a></li>
-							<li class="offcanvas_nav__item"><a class="offcanvas_nav__link" href="#"><span class="offcanvas_icons mdi mdi-information-outline"></span><span class="text">Giới thiệu</span></a></li>
-							<li class="offcanvas_nav__item"><a class="offcanvas_nav__link" href="#"><span class="offcanvas_icons mdi mdi-alarm-light"></span><span class="text">Thông báo</span></a></li>
-							<li class="offcanvas_nav__item"><a class="offcanvas_nav__link" href="contact.html"><span class="offcanvas_icons mdi mdi-phone"></span><span class="text">Liên hệ</span></a></li>
+							<li class="offcanvas_nav__item"><a class="offcanvas_nav__link" href="index.html"><span class="offcanvas_icons mdi mdi-home-outline"></span><span class="text">Trang chủ</span></a></li>
+							<li class="offcanvas_nav__item"><a class="offcanvas_nav__link" href="#"><span class="offcanvas_icons mdi mdi-information-outline"></span><span class="text">Giới thiệu</span></a>
+								<ul class="offcanvas_nav__sub">
+									<li class="offcanvas_nav__item"><a class="offcanvas_nav__link" href="#"><span class="offcanvas_icons lnr lnr-chevron-right"></span><span class="text">Giới thiệu chung</span></a></li>
+									<li class="offcanvas_nav__item"><a class="offcanvas_nav__link" href="#"><span class="offcanvas_icons lnr lnr-chevron-right"></span><span class="text">Tầm nhìn - sứ mạng</span></a></li>
+									<li class="offcanvas_nav__item"><a class="offcanvas_nav__link" href="#"><span class="offcanvas_icons lnr lnr-chevron-right"></span><span class="text">Mục tiêu đào tạo</span></a></li>
+									<li class="offcanvas_nav__item"><a class="offcanvas_nav__link" href="#"><span class="offcanvas_icons lnr lnr-chevron-right"></span><span class="text">Ban chủ nhiệm Khoa</span></a></li>
+									<li class="offcanvas_nav__item"><a class="offcanvas_nav__link" href="#"><span class="offcanvas_icons lnr lnr-chevron-right"></span><span class="text">Các bộ phận & Hội đồng</span></a></li>
+									<li class="offcanvas_nav__item"><a class="offcanvas_nav__link" href="#"><span class="offcanvas_icons lnr lnr-chevron-right"></span><span class="text">Đội ngũ giáo viên</span></a></li>
+									<li class="offcanvas_nav__item"><a class="offcanvas_nav__link" href="#"><span class="offcanvas_icons lnr lnr-chevron-right"></span><span class="text">Liên hệ</span></a></li>
+								</ul>
+							</li>
+							<li class="offcanvas_nav__item"><a class="offcanvas_nav__link" href="#"><span class="offcanvas_icons mdi mdi-bell-circle-outline"></span><span class="text">Thông báo</span></a>
+								<ul class="offcanvas_nav__sub">
+									<li class="offcanvas_nav__item"><a class="offcanvas_nav__link" href="#"><span class="offcanvas_icons lnr lnr-chevron-right"></span><span class="text">Thông báo Trường</span></a></li>
+									<li class="offcanvas_nav__item"><a class="offcanvas_nav__link" href="#"><span class="offcanvas_icons lnr lnr-chevron-right"></span><span class="text">Thông báo CĐ Tin Học</span></a></li>
+									<li class="offcanvas_nav__item"><a class="offcanvas_nav__link" href="#"><span class="offcanvas_icons lnr lnr-chevron-right"></span><span class="text">Thông báo CĐ Nghề</span></a></li>
+								</ul>
+							</li>
+							<li class="offcanvas_nav__item"><a class="offcanvas_nav__link" href="#"><span class="offcanvas_icons mdi mdi-medal-outline"></span><span class="text">Hợp tác & nghiên cứu</span></a>
+								<ul class="offcanvas_nav__sub">
+									<li class="offcanvas_nav__item"><a class="offcanvas_nav__link" href="#"><span class="offcanvas_icons lnr lnr-chevron-right"></span><span class="text">Hợp tác quốc tế</span></a></li>
+									<li class="offcanvas_nav__item"><a class="offcanvas_nav__link" href="#"><span class="offcanvas_icons lnr lnr-chevron-right"></span><span class="text">Công trình khoa học</span></a></li>
+									<li class="offcanvas_nav__item"><a class="offcanvas_nav__link" href="#"><span class="offcanvas_icons lnr lnr-chevron-right"></span><span class="text">Bảng vàng thành tích</span></a></li>
+									<li class="offcanvas_nav__item"><a class="offcanvas_nav__link" href="#"><span class="offcanvas_icons lnr lnr-chevron-right"></span><span class="text">Doanh nghiệp đồng hành</span></a></li>
+								</ul>
+							</li>
 							<li class="offcanvas_nav__divider"></li>
 							<li class="offcanvas_nav__item"><a class="offcanvas_nav__link" href="#"><span class="offcanvas_icons mdi mdi-domain"></span><span class="text">Trung tâm Tin học</span></a></li>
 							<li class="offcanvas_nav__item"><a class="offcanvas_nav__link" href="#"><span class="offcanvas_icons mdi mdi-layers-triple-outline"></span><span class="text">Danh sách học phần</span></a></li>
 							<li class="offcanvas_nav__item"><a class="offcanvas_nav__link" href="#"><span class="offcanvas_icons mdi mdi-stack-overflow"></span><span class="text">Tài liệu học tập</span></a></li>
 							<li class="offcanvas_nav__item"><a class="offcanvas_nav__link" href="#"><span class="offcanvas_icons mdi mdi-near-me"></span><span class="text">Cơ hội việc làm</span></a></li>
 							<li class="offcanvas_nav__item"><a class="offcanvas_nav__link" href="#"><span class="offcanvas_icons mdi mdi-laptop"></span><span class="text">E-learning</span></a></li>
-							<li class="offcanvas_nav__item"><a class="offcanvas_nav__link" href="#"><span class="offcanvas_icons mdi mdi-school"></span><span class="text">Cựu Sinh viên</span></a>
-								<ul class="offcanvas_nav__sub">
-									<li class="offcanvas_nav__item"><a class="offcanvas_nav__link" href="#"><span class="offcanvas_icons mdi mdi-home-outline"></span><span class="text">Nav sub 1</span></a></li>
-									<li class="offcanvas_nav__item"><a class="offcanvas_nav__link" href="#"><span class="offcanvas_icons mdi mdi-information-outline"></span><span class="text">Nav sub 2</span></a></li>
-								</ul>
-							</li>
+							<li class="offcanvas_nav__item"><a class="offcanvas_nav__link" href="#"><span class="offcanvas_icons mdi mdi-school"></span><span class="text">Cựu Sinh viên</span></a></li>
 							<li class="offcanvas_nav__item"><a class="offcanvas_nav__link" href="#"><span class="offcanvas_icons mdi mdi-folder-account"></span><span class="text">Tra cứu thông tin học viên</span></a></li>
 							<li class="offcanvas_nav__item"><a class="offcanvas_nav__link" href="#"><span class="offcanvas_icons mdi mdi-calendar-check"></span><span class="text">Lịch thi</span></a></li>
 							<li class="offcanvas_nav__divider"></li>
@@ -70,30 +90,30 @@
 				<div class="container-fluid">
 					<div class="row">
 						<div class="d-none d-lg-block col-lg-3" style="z-index: 2"><a class="text-reset text-decoration-none d-block highlight_home__title mt-lg-4 pr-lg-4 py-lg-4 bg-white text-uppercase" href="#">[THÔNG BÁO KHẨN] THỜI KHOÁ BIỂU HỌC KỲ PHỤ VÉT KHOÁ 2017 (CẬP NHẬT)</a><small class="highlight_home__postedtime text-muted">13/06/2020</small>
-							<div class="highlight_home__desc mb-2 mb-lg-3">Cập nhật thời khoá biểu môn Cấu trúc dữ liệu và thuật toán, bổ sung thêm môn Thực tập Phương pháp lập trình Hướng đối tượng.</div><a class="m-0 py-2 px-4 highlight_home__read btn btn-primary" href="#">Xem chi tiết</a>
+							<div class="highlight_home__desc mb-2 mb-lg-3">Cập nhật thời khoá biểu môn Cấu trúc dữ liệu và thuật toán, bổ sung thêm môn Thực tập Phương pháp lập trình Hướng đối tượng.</div><a class="m-0 py-2 px-4 highlight_home__read btn text-white bg__caothang" href="#">Xem chi tiết</a>
 						</div>
 						<div class="col-lg-9" style="z-index: 1">
 							<div class="highlight_home__slider swiper-container">
 								<div class="swiper-wrapper">
-									<div class="swiper-slide"><a class="position-relative d-block" href="#"><img class="swiper-lazy mw-100" data-src="https://via.placeholder.com/1200x600.png?text=01" alt="image"><span class="highlight_home__boxlink bg_gradient_1 mdi mdi-call-made d-flex justify-content-center align-items-center text-white position-absolute"></span></a>
+									<div class="swiper-slide"><a class="position-relative d-block" href="#"><img class="swiper-lazy w-100" data-src="https://via.placeholder.com/1000x600.png?text=01" alt="image"><span class="highlight_home__boxlink bg__caothang mdi mdi-call-made d-flex justify-content-center align-items-center text-white position-absolute"></span></a>
 										<div class="d-lg-none mt-2">
 											<div class="highlight_home__title text-uppercase">[THÔNG BÁO KHẨN] THỜI KHOÁ BIỂU HỌC KỲ PHỤ VÉT KHOÁ 2017 (CẬP NHẬT)</div><small class="highlight_home__postedtime text-muted">13/06/2020</small>
 											<div class="highlight_home__desc">Cập nhật thời khoá biểu môn Cấu trúc dữ liệu và thuật toán, bổ sung thêm môn Thực tập Phương pháp lập trình Hướng đối tượng.</div>
 										</div>
 									</div>
-									<div class="swiper-slide"><a class="position-relative d-block" href="#"><img class="swiper-lazy mw-100" data-src="https://via.placeholder.com/1200x600.png?text=02" alt="image"><span class="highlight_home__boxlink bg_gradient_1 mdi mdi-call-made d-flex justify-content-center align-items-center text-white position-absolute"></span></a>
+									<div class="swiper-slide"><a class="position-relative d-block" href="#"><img class="swiper-lazy w-100" data-src="https://via.placeholder.com/1000x600.png?text=02" alt="image"><span class="highlight_home__boxlink bg__caothang mdi mdi-call-made d-flex justify-content-center align-items-center text-white position-absolute"></span></a>
 										<div class="d-lg-none mt-2">
 											<div class="highlight_home__title text-uppercase">[THÔNG BÁO 2] LỊCH THI LẦN 2 / HK1 / 2019 – 2020 (CẬP NHẬT)</div><small class="highlight_home__postedtime text-muted">13/06/2020</small>
 											<div class="highlight_home__desc">02. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, natus. Eos asperiores illo quam aliquid. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque, aspernatur!</div>
 										</div>
 									</div>
-									<div class="swiper-slide"><a class="position-relative d-block" href="#"><img class="swiper-lazy mw-100" data-src="https://via.placeholder.com/1200x600.png?text=03" alt="image"><span class="highlight_home__boxlink bg_gradient_1 mdi mdi-call-made d-flex justify-content-center align-items-center text-white position-absolute"></span></a>
+									<div class="swiper-slide"><a class="position-relative d-block" href="#"><img class="swiper-lazy w-100" data-src="https://via.placeholder.com/1000x600.png?text=03" alt="image"><span class="highlight_home__boxlink bg__caothang mdi mdi-call-made d-flex justify-content-center align-items-center text-white position-absolute"></span></a>
 										<div class="d-lg-none mt-2">
 											<div class="highlight_home__title text-uppercase">[THÔNG BÁO 3] LỊCH THI LẦN 2 / HK1 / 2019 – 2020 (CẬP NHẬT)</div><small class="highlight_home__postedtime text-muted">13/06/2020</small>
 											<div class="highlight_home__desc">03. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, natus. Eos asperiores illo quam aliquid.</div>
 										</div>
 									</div>
-									<div class="swiper-slide"><a class="position-relative d-block" href="#"><img class="swiper-lazy mw-100" data-src="https://via.placeholder.com/1200x600.png?text=04" alt="image"><span class="highlight_home__boxlink bg_gradient_1 mdi mdi-call-made d-flex justify-content-center align-items-center text-white position-absolute"></span></a>
+									<div class="swiper-slide"><a class="position-relative d-block" href="#"><img class="swiper-lazy w-100" data-src="https://via.placeholder.com/1000x600.png?text=04" alt="image"><span class="highlight_home__boxlink bg__caothang mdi mdi-call-made d-flex justify-content-center align-items-center text-white position-absolute"></span></a>
 										<div class="d-lg-none mt-2">
 											<div class="highlight_home__title text-uppercase">[THÔNG BÁO 4] LỊCH THI LẦN 2 / HK1 / 2019 – 2020 (CẬP NHẬT)</div><small class="highlight_home__postedtime text-muted">13/06/2020</small>
 											<div class="highlight_home__desc">04. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, natus. Eos asperiores illo quam aliquid.</div>
@@ -139,38 +159,38 @@
 					</div>
 				</div>
 			</section>
-			<section class="job_home__wrapper mt-5">
+			<section class="job_home__wrapper py-5 bg__caothang__light mt-5">
 				<div class="container-fluid">
 					<div class="row justify-content-between align-items-center">
 						<div class="col-md-6 pr-md-5 d-flex">
 							<div class="job_home__desc">
-								<div class="job_home__desc__title text-center text-md-left text-uppercase" style="font-weight: 900">Cơ hội việc làm</div>
-								<div class="text-justify text-md-left">MyWork đang nằm trong TOP 3 nhà tuyển dụng trực tuyến tại Việt Nam và hướng đến mục tiêu trở thành đơn vị cung cấp dịch vụ tuyển dụng trực tuyến số 1 trong thời gian tới; trở thành một sàn nghề nghiệp dễ sử dụng, truy cập và là một địa chỉ không thể thiếu cho thị trường lao động Việt Nam.</div>
+								<div class="job_home__desc__title text-white text-center text-md-left text-uppercase" style="font-weight: 900">Cơ hội việc làm</div>
+								<div class="text-justify text-white-50 text-md-left">MyWork đang nằm trong TOP 3 nhà tuyển dụng trực tuyến tại Việt Nam và hướng đến mục tiêu trở thành đơn vị cung cấp dịch vụ tuyển dụng trực tuyến số 1 trong thời gian tới; trở thành một sàn nghề nghiệp dễ sử dụng, truy cập và là một địa chỉ không thể thiếu cho thị trường lao động Việt Nam.</div>
 							</div>
 						</div>
 						<div class="col-md-6 mt-3 mt-md-0">
 							<div class="job_home__title text-uppercase text-center font-weight-bold position-relative">
-								<div class="job_home__desc d-none d-md-inline-block bg-white px-3">Việc làm</div>
+								<div class="job_home__desc text-white bg__caothang__light d-none d-md-inline-block px-3">Việc làm</div>
 								<hr class="m-0">
 							</div>
 							<div class="job_home__slider swiper-container mt-3 mt-md-2">
 								<div class="swiper-wrapper">
 									<div class="swiper-slide">
 										<div class="job_home__slider__item d-flex"><a class="job_home__logo_company p-1 p-md-3 d-flex justify-content-center align-items-center border" href="#"><img class="swiper-lazy" data-src="https://scontent.fvca1-1.fna.fbcdn.net/v/t1.0-9/29262093_922577841233369_3777406020091904000_o.png?_nc_cat=106&amp;_nc_sid=174925&amp;_nc_ohc=ROgKRh_bcloAX8qs2I_&amp;_nc_ht=scontent.fvca1-1.fna&amp;oh=ee22198555a1a3b89a1b02a2743e7981&amp;oe=5F1830F2" alt="Logo Cao Thắng"></a>
-											<div class="ml-2 ml-md-3"><a class="text-reset mb-0 job_home__sub_title" href="#">[TUYỂN DỤNG] CÔNG TY CỔ PHẦN TIN HỌC MINH THÔNG</a>
+											<div class="ml-2 ml-md-3"><a class="text-white mb-0 job_home__sub_title" href="#">[TUYỂN DỤNG] CÔNG TY CỔ PHẦN TIN HỌC MINH THÔNG</a>
 												<div class="job_home__sub_desc"></div>
-												<div class="small mdi mdi-clock-outline"><span class="ml-1">23/06/2020</span></div>
-												<div class="mt-1">Vị trí: <strong>Front End developer</strong></div>
+												<div class="small mdi mdi-clock-outline text-white-50"><span class="ml-1">23/06/2020</span></div>
+												<div class="text-white-50 mt-1">Vị trí: <strong class="text-white">Front End developer</strong></div>
 												<div class="job_home__skill mt-1"><span class="badge badge-success">Java</span><span class="badge badge-success">Phần mềm</span></div>
 											</div>
 										</div>
 									</div>
 									<div class="swiper-slide">
 										<div class="job_home__slider__item d-flex"><a class="job_home__logo_company p-1 p-md-3 d-flex justify-content-center align-items-center border" href="#"><img class="swiper-lazy" data-src="https://cdn.itviec.com/employers/fpt-software/logo/w170/mir3HT3xtedbECJY5jVeRRgV/fpt-software-logo.png" alt="Logo FPT Software"></a>
-											<div class="ml-2 ml-md-3"><a class="text-reset mb-0 job_home__sub_title" href="#">[TUYỂN DỤNG] FPT Software</a>
+											<div class="ml-2 ml-md-3"><a class="text-white mb-0 job_home__sub_title" href="#">[TUYỂN DỤNG] FPT Software</a>
 												<div class="job_home__sub_desc"></div>
-												<div class="small mdi mdi-clock-outline"><span class="ml-1">23/06/2020</span></div>
-												<div class="mt-1">Vị trí: <strong>Fullstack developer</strong></div>
+												<div class="small mdi mdi-clock-outline text-white-50"><span class="ml-1">23/06/2020</span></div>
+												<div class="text-white-50 mt-1">Vị trí: <strong class="text-white">Fullstack developer</strong></div>
 												<div class="job_home__skill mt-1"><span class="badge badge-success">Javascript</span><span class="badge badge-success">Phần mềm</span></div>
 											</div>
 										</div>
@@ -178,8 +198,8 @@
 								</div>
 							</div>
 							<hr class="mt-3 mb-0">
-							<div class="d-flex align-items-center justify-content-between"><a class="text-muted" href="#" style="font-size: 15px">Xem tất cả</a>
-								<div class="job_home__slider__navigation text-muted"><span class="prev mdi mdi-chevron-left mdi-24px"></span><span class="next mdi mdi-chevron-right mdi-24px"></span></div>
+							<div class="d-flex align-items-center justify-content-between"><a class="text-white-50" href="#" style="font-size: 15px">Xem tất cả</a>
+								<div class="job_home__slider__navigation text-white-50"><span class="prev mdi mdi-chevron-left mdi-24px"></span><span class="next mdi mdi-chevron-right mdi-24px"></span></div>
 							</div>
 						</div>
 					</div>
@@ -191,39 +211,39 @@
 						<div class="news_home__title text-uppercase font-weight-bold mb-3">Tiện ích sinh viên</div>
 					</div>
 					<div class="row">
-						<div class="col-6 col-lg-3 feature_home__item"><a class="feature_home__box card border-0 py-3 px-2 py-sm-5 px-sm-3 my-2 my-sm-3 text-center text-decoration-none text-uppercase text-white" href="#" style="background: #fab1a0">
-								<div class="feature_home__icon fab fa-stack-overflow"></div>
+						<div class="col-6 col-lg-3 feature_home__item"><a class="feature_home__box card border-0 py-3 px-2 py-sm-5 px-sm-3 my-2 my-sm-3 text-center text-decoration-none text-uppercase text-white" href="#">
+								<div class="feature_home__icon mdi mdi-stack-overflow"></div>
 								<div class="feature_home__text mt-2">Tài liệu học tập</div></a></div>
-						<div class="col-6 col-lg-3 feature_home__item"><a class="feature_home__box card border-0 py-3 px-2 py-sm-5 px-sm-3 my-2 my-sm-3 text-center text-decoration-none text-uppercase text-white" href="#" style="background: #00cec9">
-								<div class="feature_home__icon fas fa-search"></div>
-								<div class="feature_home__text mt-2">Tra cứu điểm thi</div></a></div>
-						<div class="col-6 col-lg-3 feature_home__item"><a class="feature_home__box card border-0 py-3 px-2 py-sm-5 px-sm-3 my-2 my-sm-3 text-center text-decoration-none text-uppercase text-white" href="#" style="background: #e17055">
-								<div class="feature_home__icon fas fa-briefcase"></div>
+						<div class="col-6 col-lg-3 feature_home__item"><a class="feature_home__box card border-0 py-3 px-2 py-sm-5 px-sm-3 my-2 my-sm-3 text-center text-decoration-none text-uppercase text-white" href="#">
+								<div class="feature_home__icon mdi mdi-folder-account"></div>
+								<div class="feature_home__text mt-2">Tra cứu</div></a></div>
+						<div class="col-6 col-lg-3 feature_home__item"><a class="feature_home__box card border-0 py-3 px-2 py-sm-5 px-sm-3 my-2 my-sm-3 text-center text-decoration-none text-uppercase text-white" href="#">
+								<div class="feature_home__icon mdi mdi-near-me"></div>
 								<div class="feature_home__text mt-2">Cơ hội việc làm</div></a></div>
-						<div class="col-6 col-lg-3 feature_home__item"><a class="feature_home__box card border-0 py-3 px-2 py-sm-5 px-sm-3 my-2 my-sm-3 text-center text-decoration-none text-uppercase text-white" href="#" style="background: #0984e3">
-								<div class="feature_home__icon fas fa-school"></div>
+						<div class="col-6 col-lg-3 feature_home__item"><a class="feature_home__box card border-0 py-3 px-2 py-sm-5 px-sm-3 my-2 my-sm-3 text-center text-decoration-none text-uppercase text-white" href="#">
+								<div class="feature_home__icon mdi mdi-laptop"></div>
 								<div class="feature_home__text mt-2">E-learning</div></a></div>
-						<div class="col-6 col-lg-3 feature_home__item"><a class="feature_home__box card border-0 py-3 px-2 py-sm-5 px-sm-3 my-2 my-sm-3 text-center text-decoration-none text-uppercase text-white" href="#" style="background: #81ecec">
-								<div class="feature_home__icon fas fa-user-graduate"></div>
+						<div class="col-6 col-lg-3 feature_home__item"><a class="feature_home__box card border-0 py-3 px-2 py-sm-5 px-sm-3 my-2 my-sm-3 text-center text-decoration-none text-uppercase text-white" href="#">
+								<div class="feature_home__icon mdi mdi-school"></div>
 								<div class="feature_home__text mt-2">Cựu sinh viên</div></a></div>
-						<div class="col-6 col-lg-3 feature_home__item"><a class="feature_home__box card border-0 py-3 px-2 py-sm-5 px-sm-3 my-2 my-sm-3 text-center text-decoration-none text-uppercase text-white" href="#" style="background: #ff7675">
-								<div class="feature_home__icon fas fa-list-alt"></div>
-								<div class="feature_home__text mt-2">học phần</div></a></div>
-						<div class="col-6 col-lg-3 feature_home__item"><a class="feature_home__box card border-0 py-3 px-2 py-sm-5 px-sm-3 my-2 my-sm-3 text-center text-decoration-none text-uppercase text-white" href="#" style="background: #74b9ff">
-								<div class="feature_home__icon fas fa-atom"></div>
-								<div class="feature_home__text mt-2">Trung tâm Tin học</div></a></div>
-						<div class="col-6 col-lg-3 feature_home__item"><a class="feature_home__box card border-0 py-3 px-2 py-sm-5 px-sm-3 my-2 my-sm-3 text-center text-decoration-none text-uppercase text-white" href="#" style="background: #d63031">
-								<div class="feature_home__icon fas fa-calendar-alt"></div>
+						<div class="col-6 col-lg-3 feature_home__item"><a class="feature_home__box card border-0 py-3 px-2 py-sm-5 px-sm-3 my-2 my-sm-3 text-center text-decoration-none text-uppercase text-white" href="#">
+								<div class="feature_home__icon mdi mdi-calendar-check"></div>
 								<div class="feature_home__text mt-2">Lịch thi</div></a></div>
+						<div class="col-6 col-lg-3 feature_home__item"><a class="feature_home__box card border-0 py-3 px-2 py-sm-5 px-sm-3 my-2 my-sm-3 text-center text-decoration-none text-uppercase text-white" href="#">
+								<div class="feature_home__icon mdi mdi-domain"></div>
+								<div class="feature_home__text mt-2">Trung tâm Tin học</div></a></div>
+						<div class="col-6 col-lg-3 feature_home__item"><a class="feature_home__box card border-0 py-3 px-2 py-sm-5 px-sm-3 my-2 my-sm-3 text-center text-decoration-none text-uppercase text-white" href="#">
+								<div class="feature_home__icon mdi mdi-layers-triple-outline"></div>
+								<div class="feature_home__text mt-2">Học phần</div></a></div>
 					</div>
 				</div>
 			</section>
-			<section class="quote_home__wrapper bg_gradient_3 shadow mt-5">
+			<section class="quote_home__wrapper bg__image__2 shadow py-5 mt-5">
 				<div class="container-fluid">
 					<div class="row">
 						<div class="col-12">
 							<blockquote class="quote_home__blockquote blockquote border-0 m-0">
-								<div class="mb-2 text-white text-justify text-md-center">Tiền thân của khoa Công nghệ Thông tin là bộ môn Tin học (tháng 08 năm 1998) thuộc Khoa Điện Tử – Tin Học trường Cao Đẳng Kỹ Thuật Cao Thắng Thành lập vào tháng 01 năm 2020.</div>
+								<div class="h2 mb-3 text-white text-justify text-md-center">Tiền thân của khoa Công nghệ Thông tin là bộ môn Tin học (tháng 08 năm 1998) thuộc Khoa Điện Tử – Tin Học trường Cao Đẳng Kỹ Thuật Cao Thắng Thành lập vào tháng 01 năm 2020.</div>
 								<footer class="blockquote-footer text-white text-right text-md-center">Trích lược sử hình thành
 									<cite title="khoa Công nghệ Thông tin">khoa Công nghệ Thông tin</cite>
 								</footer>
@@ -361,12 +381,12 @@
 				</div>
 			</section>
 			<section class="social_media__wrapper shadow"><a class="social_media__facebook fab fa-facebook-f bg_gradient_facebook" href="#"></a><a class="social_media__youtube fab fa-youtube" href="#"></a>
-				<div class="social_media__search bg_gradient_3">
+				<div class="social_media__search bg-white">
 					<form class="header_search">
-						<input class="header_search__input" type="text" placeholder="Nhập keyword...">
+						<input class="header_search__input bg-white" type="text" placeholder="Nhập keyword...">
 						<button class="header_search__button" type="reset"></button>
 					</form>
-				</div><a class="social_media__BackToTop mdi mdi-chevron-up bg_gradient_1" href="#"></a>
+				</div><a class="social_media__BackToTop mdi mdi-chevron-up bg__caothang" href="#"></a>
 			</section>
 		</main>
 		<footer class="footer mt-5">
