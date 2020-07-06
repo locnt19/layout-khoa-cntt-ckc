@@ -33,12 +33,16 @@
       right: 0
     .header_search__input
       font-weight: 500
-      height: 42px
+      height: 36px
+      @media screen and ( min-width: 576px )
+        height: 42px
       &::placeholder
         font-weight: 300
     .header_search__button
-      right: 12px
+      right: 10px
       border-color: #283790
+      @media screen and ( min-width: 576px )
+        right: 12px
       &::before
         background-color: #283790
       &.close::before,

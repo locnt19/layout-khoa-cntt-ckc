@@ -1,0 +1,47 @@
+.bg__caothang__light
+  .pt-4
+    include ../breadcrumb/breadcrumb.pug
+  section.search_page__wrapper.mt-4
+    .container-fluid.bg-white.shadow.rounded-lg
+      .px-3.py-4.p-lg-5
+        .row.search_page__form.justify-content-center
+          .col-md-11
+            .row
+              .col
+                input.form-control.mb-3.mb-md-0(placeholder='Nhập từ khoá bài viết bạn muốn tìm...')
+              .col-md-3.col-lg-2
+                select.form-control.mb-3.mb-md-0
+                  option.d-none Chủ đề
+                  option Tin tức
+                  option Thông báo
+              .col-md-auto
+                button.w-100.btn.btn-primary.bg__caothang.px-md-4.px-lg-5 Tìm kiếm
+    .container-fluid.bg-white.shadow.rounded-lg.mt-4
+      .px-3.py-4.p-lg-5
+        .row.justify-content-center
+          .col-md-11
+            .h5.m-0 Có 15 kết quả
+            .search_page__result.mt-4
+              -for(var i = 0; i < 5; i++)
+                .py-4.border-top
+                  .row
+                    .col-12.col-sm-auto
+                      .search_page__result__image.mx-auto
+                        img.lazy(data-src='img/news/olympic.jpg' alt='result item')
+                    .col
+                      .search_page__result__title.mt-2.mt-sm-0
+                        a(href='#').font-weight-bold.text-reset [S4L] KẾT QUẢ SOLUTIONS FOR LIFE KỲ 03 TRANSLATING INTO PROTEIN
+                      .small.mt-2
+                        span.mr-3
+                          span.mdi.mdi-pencil.mr-1
+                          strong Trần Quang Khải
+                        span
+                          span.mdi.mdi-clock.mr-1
+                          span 15h15 26/6/2020
+                      .mt-2 CLB Tin học xin chúc mừng bạn Lê Hoàng Khang (CĐ TH 19C) và bạn Võ Bằng Kiều (CĐ TH 19D) đã có lời giải chính xác cho bài toán kỳ 03 Solutions For Life với chủ đề “Translating into Protein”. Thân mời bạn đến VP. BM. Tin học lầu 7 dãy F vào lúc 11h15 ngày thứ 4 (18.12.2019) để nhận thưởng.
+            nav.search_page__pagination.mt-4
+              a(href='#').mx-1.mx-md-2 Quay lại
+              a(href='#').mx-1.mx-md-2.search_page__pagination__item 1
+              a(href='#').mx-1.mx-md-2.search_page__pagination__item.active 2
+              a(href='#').mx-1.mx-md-2.search_page__pagination__item 3
+              a(href='#').mx-1.mx-md-2 Tiếp theo

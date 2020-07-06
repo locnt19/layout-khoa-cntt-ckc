@@ -1,0 +1,53 @@
+.bg__caothang__light
+  .pt-4
+    include ../breadcrumb/breadcrumb.pug
+  section.document_page__wrapper.mt-4
+    .container-fluid.bg-white.shadow.rounded-lg
+      .px-3.py-4.p-lg-5
+        .row.document_page__form.justify-content-center
+          .col-md-11
+            .row
+              .col
+                input.form-control.mb-3.mb-md-0(placeholder='Nhập từ khoá bài viết bạn muốn tìm...')
+              .col-md-3.col-lg-2
+                select.form-control.mb-3.mb-md-0
+                  option.d-none Khoá học
+                  option 2016
+                  option 2017
+              .col-md-3.col-lg-2
+                select.form-control.mb-3.mb-md-0
+                  option.d-none Bậc
+                  option Cao Đẳng
+                  option Cao đẳng nghề
+              .col-md-auto
+                button.w-100.btn.btn-primary.bg__caothang.px-md-4.px-lg-5 Tìm kiếm
+    .container-fluid.bg-white.shadow.rounded-lg.mt-4
+      .px-3.py-4.p-lg-5
+        .row.justify-content-center
+          .col-md-11
+            .h5.m-0 Có 15 kết quả
+            .table-responsive-sm.mt-4
+              table.document_page__table.table.table-hover.border
+                thead.bg__caothang.text-white
+                  tr
+                    th(scope='col') #
+                    th.text-left(scope='col') Tiêu đề
+                    th(scope='col') Thời gian đăng
+                    th(scope='col') Người đăng
+                    th(scope='col') Tuỳ chọn
+                tbody
+                  -for(var i = 0; i < 4; i++)
+                    tr
+                      th(scope='row') #{i + 1}
+                      td.text-left
+                        a(href='#').d-block.text-reset Tài Liệu #{i + 1} Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores iure, voluptatem possimus pariatur vero dolor? Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, doloribus excepturi, exercitationem in dolorum dignissimos expedita accusantium tenetur officia repellat voluptates eos ullam corrupti voluptate?
+                      td 2#{i}:0#{i} 06/0#{i + 1}/2020
+                      td Nguyễn Thành Lộc
+                      td(style='min-width: 100px')
+                        a(href='#').btn.btn-primary Tải về
+            nav.search_page__pagination.mt-4
+              a(href='#').mx-1.mx-md-2 Quay lại
+              a(href='#').mx-1.mx-md-2.search_page__pagination__item 1
+              a(href='#').mx-1.mx-md-2.search_page__pagination__item.active 2
+              a(href='#').mx-1.mx-md-2.search_page__pagination__item 3
+              a(href='#').mx-1.mx-md-2 Tiếp theo

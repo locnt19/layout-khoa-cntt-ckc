@@ -12,20 +12,21 @@
         padding-left: 16px
     &:nth-of-type(2)
       .breadcrumb_link
-        background: lighten(#283890, 10)
+        background: lighten(#283890, 15)
         &::before
-          border-left-color: lighten(#283890, 10)
-    &:nth-of-type(3)
-      .breadcrumb_link
-        background: lighten(#283890, 20)
-        &::before
-          border-left-color: lighten(#283890, 20)
+          border-left-color: lighten(#283890, 15)
+    // &:nth-of-type(3)
+    //   .breadcrumb_link
+    //     background: lighten(#283890, 30)
+    //     &::before
+    //       border-left-color: lighten(#283890, 30)
     &:last-of-type
       .breadcrumb_link
-        color: inherit
-        background: #fff
-        &::before
-          border-left-color: #fff
+        color: #fff
+        background: transparent
+        &::before,
+        &::after
+          border-left-color: transparent
     .breadcrumb_link
       color: inherit
       display: flex
@@ -40,11 +41,15 @@
       display: -webkit-box
       -webkit-box-orient: vertical
       transition: unset
-      &:hover
-        color: inherit
-        background: #fff
-        &::before
-          border-left-color: #fff
+      text-decoration: none
+      font-size: 14px
+      @media screen and ( min-width: 768px )
+        font-size: 16px
+      // &:hover
+      //   color: inherit
+      //   background: #fff
+      //   &::before
+      //     border-left-color: #fff
       &::before,
       &::after
         content: ''
