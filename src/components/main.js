@@ -1,5 +1,6 @@
 window.addEventListener('DOMContentLoaded', function () {
   LazyLoadFunction()
+  AOS.init()
   navbarOffCanvas()
   headerSearch()
   eventScrollBackToTop()

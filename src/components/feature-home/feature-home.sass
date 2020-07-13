@@ -31,11 +31,12 @@
         padding-left: calc( 15px / 2 )
   &__box
     opacity: 1
+    transition: .25s
     border-radius: .5rem
     box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)
     &:hover
-      // opacity: .8
-      box-shadow: 0 0 1rem 0 rgba(0,0,0,.2)
+      transform: translateY(-5px)
+      box-shadow: 0 0 1rem 0 rgba(0,0,0,.4)
   &__icon
     font-size: 20px
     @media screen and ( min-width: 992px )
