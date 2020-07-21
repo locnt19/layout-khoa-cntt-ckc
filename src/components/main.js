@@ -5,7 +5,6 @@ window.addEventListener('DOMContentLoaded', function () {
   headerSearch()
   eventScrollBackToTop()
   sliderHighLightHome()
-  eventClickHighLightHome()
   sliderJobHome()
   sliderGalleryHome()
   sliderPartnerHome()
@@ -88,26 +87,16 @@ function eventScrollBackToTop() {
 }
 //#endregion
 
-
-function eventClickHighLightHome() {
-  $('.highlight_home__slider__thumbnail .swiper-slide').on('change', function () {
-    $(this)
-  })
-  $('.highlight_home__slider__thumbnail .highlight_home__slider__item').click(function () {
-    $('.highlight_home__slider__item').removeClass('active')
-    $(this).addClass('active')
-    const title = $(this).children('.highlight_home__sub_title').text()
-    const short = $(this).children('.highlight_home__sub_desc').text()
-    const postTime = $(this).children('.highlight_home__sub_postedtime').text()
-    $('.highlight_home__title').text(title)
-    $('.highlight_home__desc').text(short)
-    $('.highlight_home__postedtime').text(postTime)
-  })
-}
 //#region all slide
 function sliderHighLightHome() {
   var highLightHomeThumbs = new Swiper('.highlight_home__slider__thumbnail', {
-    speed: 800,
+    speed: 1000,
+    loop: true,
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    },
+    slideToClickedSlide: true,
     breakpoints: {
       slidesPerView: 1,
       768: {
@@ -119,11 +108,21 @@ function sliderHighLightHome() {
       hide: true,
     },
     watchSlidesVisibility: true,
-    watchSlidesProgress: true
+    watchSlidesProgress: true,
+    on: {
+      click: function () {
+        const title = $(this.clickedSlide).find('.highlight_home__sub_title').text()
+        const short = $(this.clickedSlide).find('.highlight_home__sub_desc').text()
+        const postTime = $(this.clickedSlide).find('.highlight_home__sub_postedtime').text()
+        $('.highlight_home__title').text(title)
+        $('.highlight_home__desc').text(short)
+        $('.highlight_home__postedtime').text(postTime)
+      }
+    }
   })
   new Swiper('.highlight_home__slider', {
     spaceBetween: 15,
-    slideToClickedSlide: true,
+    speed: 2000,
     effect: 'coverflow',
     coverflowEffect: {
       rotate: 90,
@@ -133,11 +132,6 @@ function sliderHighLightHome() {
       slideShadows: true,
     },
     lazy: true,
-    speed: 2000,
-    autoplay: {
-      delay: 2500,
-      disableOnInteraction: false,
-    },
     simulateTouch: false, // tắt kéo-thả chuột khi chuyển slide
     breakpoints: {
       992: {
@@ -150,7 +144,7 @@ function sliderHighLightHome() {
     },
     thumbs: {
       swiper: highLightHomeThumbs
-    },
+    }
   })
 }
 
